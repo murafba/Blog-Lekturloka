@@ -1,0 +1,13 @@
+@font-face{
+    font-family: 'tangerine';
+    src: url(assets/font/tagerine/Tangerine-Regular.ttf);
+}   
+@font-face{
+	font-family: 'pica';
+	src: url(assets/font/pica/IMFellDWPica-Regular.ttf);
+}
+*{margin: 0;padding: 0;}
+body{background: linear-gradient(to right, #003300 0%, #99ff33 100%);}
+.fa-stack{margin: auto;}
+.text {margin: auto;}
+.text h1{font-family: pica; color: white;}

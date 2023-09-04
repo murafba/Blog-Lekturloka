@@ -1,0 +1,2959 @@
+/* Fonts */
+@font-face{
+	font-family: 'winds';
+	src: url(assets/font/winds/TradeWinds-Regular.ttf);
+}
+@font-face{
+	font-family: 'lovers';
+	src: url(assets/font/lovers/LoversQuarrel-Regular.ttf);
+}
+@font-face{
+	font-family: 'oregano';
+	src: url(assets/font/oregano/Oregano-Regular.ttf);
+}
+@font-face{
+	font-family: 'pica';
+	src: url(assets/font/pica/IMFellDWPica-Regular.ttf);
+}
+@font-face{
+	font-family: 'tangerine';
+	src: url(assets/font/tagerine/Tangerine-Regular.ttf);
+}
+@font-face{
+	font-family: 'tilana';
+	src: url(assets/font/tilana/Tillana-Regular.ttf);
+}
+@font-face{
+	font-family: 'akronim';
+	src: url(assets/font/akronim/Akronim-Regular.ttf);
+}
+@font-face{
+  font-family: 'elsie';
+  src: url(assets/font/elsie/elsie.ttf)
+}
+@font-face {
+  font-family: 'kenia';
+  src: url(assets/font/Kenia/kenia.ttf);
+}
+@font-face {
+  font-family: 'monofett';
+  src: url(assets/font/monofett/monofett.ttf);
+}
+/* End */
+
+
+/* Tag Utama */
+*{margin:0;padding:0;}html{scroll-behavior: smooth;}body{background-color: #001a1a;}
+/* Tutup */
+
+
+/* Header */
+.header{
+  background: linear-gradient(to right, #1f1f2e 0%, #3d3d5c 100%);
+	height: 80px;
+	transform:  rotateX(15deg);
+}
+.header h1{
+	font-family: oregano;
+	color: lavender;
+	line-height: 80px;
+  font-size: 35pt;
+}
+/* Tutup */
+
+
+/* Navbar */
+.isNavbar{
+	background-color: #3d5c4d;
+  border-bottom: solid white 2px;
+}
+  /* navbar mobile */
+  @media screen and (min-width: 10px) and
+  (max-width: 767px) {
+    .barisNavbarPC a{display: none;}
+    .barisNavbarMobile a{
+      text-decoration: none;
+      line-height: 38px;
+      max-width: 33%;
+      font-size: 3vw;
+      font-family: pica;
+      color: cornsilk;
+      text-align: center;
+      border-right: inset 10px #559E54;
+      border-left: none 10px #0c410b;
+      border-top-right-radius: 20px;
+      transition: border-radius 0.4s, border-left 0.4s, border-right 0.4s;
+    }
+    .barisNavbarMobile a:hover{
+      background-color:#99003d;
+      line-height: 38px;
+      border-radius: 20px;
+      color: white;
+      border-left: outset 8px #0c410b;
+      border-right: inset 10px #0c410b;
+    }
+  }
+  /* End navbar mobile */
+
+  /* navbar di pc*/
+  @media screen and (min-width: 767.3px) and
+  (max-width: 8000px){
+    .barisNavbarMobile{display: none;}
+    .barisNavbarPC a{
+      text-decoration: none;
+      line-height: 38px;
+      font-size: 2vh;
+      font-family: pica;
+      color: #E5FBD5;
+      text-align: center;
+      border-right: inset 10px #559E54;
+      border-left: none 10psx #0c410b;
+      border-top-right-radius: 20px;
+      transition: border-radius 0.4s, border-left 0.4s, border-right 0.4s;
+    }
+    .barisNavbarPC a:hover{
+      background-color:#cc0052;
+      line-height: 38px;
+      border-radius: 20px;
+      color: cornsilk;
+      border-left: outset 8px #0c410b;
+      border-right: inset 10px #0c410b;
+    }
+
+  }
+  /* End navbar pc */
+
+  /* Offcanvas navbar */
+  .offcanvas-header h5{
+    font-family: winds;
+  }
+  .menuUmum p{
+    font-family: winds;
+  }  
+  .menuUmum a{
+        text-decoration: none;
+        font-family: pica;
+    }
+    .menuUmum a:hover{
+    background-color: grey;
+    color: brown;
+    }
+    .namaMenu{
+    color: #99ffcc;
+    
+    }
+    .menuKategori a, .menuSubWeb a{
+    color: black;
+    border-radius: 20px;
+    font-family: pica;
+    }
+    .menuKategori a:hover, .menuSubWeb a:hover{
+    background-color: #333333;
+    text-shadow: 2px 1px 2px red;
+    color: #ccffcc;
+    }
+    .parentLuarOffcanvasArtikelTerpopuler{
+        width: 48%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        float: right;
+    }
+    .parentLuarOffcanvasArtikelTerpopuler::-webkit-scrollbar{width: 5px;}.parentLuarOffcanvasArtikelTerpopuler::-webkit-scrollbar-thumb{background: #a35c3c;  border-radius: 30px; width: 10px;}.parentLuarOffcanvasArtikelTerpopuler::-webkit-scrollbar-track{background: black;  border-radius: 30px;}/*.parentLuarOffcanvasArtikelTerpopuler::-webkit-scrollbar-button:start:decrement,.parentLuarOffcanvasArtikelTerpopuler::-webkit-scrollbar-button:end:increment {background: #7c2929;}*/
+    .parentDalamOffcanvasArtikelTerpopuler{
+    height: 300px;
+    }
+    .kontenOffcanvasArtikelTerpopuler{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    margin-bottom: 10px;
+    }
+    .kotakKontenOffcanvasArtikelTerpopuler img{
+    width: 150px;
+    height: 150px;
+    }
+    .captionKotakKontenOffcanvasArtikelTerpopuler{
+      width: 120px;
+      transition: all 0.6s;
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+      height: 120px;
+      opacity: 0.9;
+      text-align: center;
+      background-color: grey;
+      margin-top: -135px;
+     
+    }
+    .captionKotakKontenOffcanvasArtikelTerpopuler:hover{
+      text-decoration: none;
+      color: white;
+      margin-left: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top:-140px;
+      background-color: grey;
+      opacity: 0.5;
+      text-align: center;
+    }
+    .judulOffcanvasArtikelTerbaru{
+    margin-top: -60%;
+    }
+    .judulOffcanvasArtikelTerbaru p{
+      font-family: winds;
+    }
+    .parentLuarOffcanvasArtikelTerbaru{
+    width: 48%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    float: left;
+    }
+    .parentDalamOffcanvasArtikelTerbaru{
+    height: 300px;
+    }
+    .kontenOffcanvasArtikelTerbaru{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    margin-bottom: 10px;
+    }
+    .kotakKontenOffcanvasArtikelTerbaru img{
+      width: 150px;
+      height: 150px;
+    
+    }
+    .captionKotakKontenOffcanvasArtikelTerbaru{
+      width: 120px;
+      transition: all 0.6s;
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+      height: 120px;
+      opacity: 0.7;
+      text-align: center;
+      background-color: grey;
+      margin-top: -135px;
+      
+    }
+    .captionKotakKontenOffcanvasArtikelTerbaru:hover{
+      text-decoration: none;
+      color: white;
+      margin-left: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top:-140px;
+      background-color: grey;
+      opacity: 0.3;
+      text-align: center;
+    }
+    .parentLuarOffcanvasArtikelTerbaru::-webkit-scrollbar{width: 5px;}.parentLuarOffcanvasArtikelTerbaru::-webkit-scrollbar-thumb{background: #622413;border-radius: 30px;width:3px;}.parentLuarOffcanvasArtikelTerbaru::-webkit-scrollbar-track{border-radius: 30px;background:black;}
+    .navbarOffcanvas::-webkit-scrollbar {
+    width: 10px;
+    }
+    .navbarOffcanvas::-webkit-scrollbar-track {
+    background: #666;
+    border-radius: 20px;
+    }
+    .navbarOffcanvas::-webkit-scrollbar-thumb {
+      background: #333333;
+      border-radius: 20px;
+    }
+  /* tutup offcanvas navbar */
+/* Navbar ends */
+
+/* MainBG and Carousel */
+.headline{
+	background-color: /*#E5F6E5*/#5d6213;
+	border-bottom: groove white 2px;
+}
+/* MainBG ends */
+
+.isiTulisanArtikel a{
+  color: #99ffcc;
+  text-decoration: none;
+}
+
+.isiTulisanArtikel a:hover{
+  color: #99ffff;
+}
+/*
+.judul{
+	background-color: #E8F3E8;
+	width: 100%;
+	height: 90px;
+	margin-top: 40px;
+}*/
+/*
+.gambarJudul{
+	background-color: #DCDCDC;
+	width: 280px;
+	height: 110px;
+	margin-top: 30px;
+	opacity: 0.7;
+  	border: 1px solid #c69;
+}*/
+
+
+/* Go to main content */
+.kontenPertama{
+	padding: 20px;
+	border-radius: 25px;
+  background-color: #334d4d;
+  height: 600px;
+}
+.isiKontenPertama{
+  height: 100%;
+}
+
+/* Khusus Mobile friendly */
+@media screen and (min-width: 1px) and (max-width: 575px) {
+    /* Judul Artikel */
+    .isiKontenPertamaMobile{
+        height: 100%;
+    }
+    .judulArtikelMobilePhone{
+        background-color:#001a1a;
+        height: 50%;
+        margin-left: 2%;
+        width: 95%;
+        border-radius: 30px;
+        border: outset #808080 4px;
+    }
+    .isiJudulArtikelMobile{
+        font-family: pica;
+        color: #b3b3b3;
+        text-align: center;
+        width:100%;
+        height: auto;
+        margin-top: 12%;
+    }
+    .isiJudulArtikelMobile h1{
+        font-size: 35pt;
+    }
+    .pembuatTanggalKategoriTagsMobile{
+        background-color: #b3b3b3;
+        width:100%;
+        height: auto;
+        text-align: center;
+        font-family: monospace;
+        padding-top: 4px;
+    } 
+    .pembuatTanggalKategoriTagsMobile h6{
+          font-size: 12pt;
+    }
+    
+    /* Kategori */
+    .kategoriMobile{
+        height: 42%;
+        width: 95%;
+        margin-top: 5%;
+        margin-left: 2%;
+        background-color: #001a1a;
+        border: inset #808080 4px;
+        border-top-left-radius: 120px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 120px;
+    }
+    .bungkusKategoriMobile{
+        width: 50%;
+        height: 227px;
+        background-color: none;
+        float: left;
+        border-top-left-radius: 120px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        
+    }
+    .bungkusKategoriMobile::-webkit-scrollbar {
+        width: 5px;
+        height: 90px;  
+    }
+    .bungkusKategoriMobile::-webkit-scrollbar-track {
+        background: grey;
+        border-radius: 20px;
+    }
+    .bungkusKategoriMobile::-webkit-scrollbar-thumb {
+        background: #333333;
+        border-radius: 20px;
+    }
+    .bungkusKategoriMobile h2{
+        margin-top: 15%;
+        text-align: center;
+        font-family: elsie;
+        
+        color:#669999;
+    }
+
+    /* Box-Box Kategori */
+    .kategori-1Mobile{
+        width: 100px;
+        height: 100px;
+        background-color: #bf4080;
+        margin: auto;
+        border-radius: 50%;
+    }
+    .kategori-1Mobile a{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 15%;
+        margin-top: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: dashed 2px black;
+        font-family: tilana;
+        font-size: 10pt;
+        color: white;
+        transition: all 0.5s;
+    }
+    .kategori-1Mobile a:hover{
+        width: 100px;
+        margin-left: 0;
+        border: none;
+        margin-top: 0;
+        height: 100px;
+        background-image: url(img/kategori_bg/asa.jpg);
+        color: white;
+        font-weight: bolder;
+        font-size: 15pt;
+        background-size: cover;
+    }
+    .kategori-2Mobile{
+        width: 100px;
+        height: 100px;
+        background-color: #cc5200;
+        margin: auto;
+        border-radius: 50%;
+    }
+    .kategori-2Mobile a{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 15%;
+        margin-top: 15%;
+        display: flex;
+        font-size: 10pt;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: dashed 2px black;
+        font-family: tilana;
+        color: white;
+        transition: all 0.5s;
+    }
+    .kategori-2Mobile a:hover{
+        width: 100px;
+        margin-left: 0;
+        border: none;
+        margin-top: 0;
+        height: 100px;
+        background-image: url(img/kategori_bg/embara.jpg);
+        color: white;
+        font-weight: bolder;
+        font-size: 15pt;
+        background-size: cover;
+    }
+    .kategori-3Mobile{
+        width: 100px;
+        height: 100px;
+        background-color: #008060;
+        margin: auto;
+        border-radius: 50%;
+    }
+    .kategori-3Mobile a{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 15%;
+        margin-top: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: dashed 2px black;
+        font-family: tilana;
+        font-size: 10pt;
+        color: white;
+        transition: all 0.5s;
+    }
+    .kategori-3Mobile a:hover{
+        width: 100px;
+        margin-left: 0;
+        border: none;
+        margin-top: 0;
+        height: 100px;
+        background-image: url(img/kategori_bg/hikmah.jpg);
+        color: white;
+        font-weight: bolder;
+        font-size: 15pt;
+        background-size: cover;
+    }
+    .kategori-4Mobile{
+        width: 100px;
+        height: 100px;
+        background-color: #ff99ff;
+        margin: auto;
+        border-radius: 50%;
+    }
+    .kategori-4Mobile a{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 15%;
+        margin-top: 15%;
+        display: flex;
+        font-size: 10pt;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: dashed 2px black;
+        font-family: tilana;
+        color: white;
+        transition: all 0.5s;
+    }
+    .kategori-4Mobile a:hover{
+        width: 100px;
+        margin-left: 0;
+        border: none;
+        margin-top: 0;
+        height: 100px;
+        background-image: url(img/kategori_bg/nadir.jpg);
+        color: white;
+        font-weight: bolder;
+        font-size: 15pt;
+        background-size: cover;
+    }
+    .kategori-5Mobile{
+        width: 100px;
+        height: 100px;
+        background-color: #9999ff;
+        margin: auto;
+        border-radius: 50%;
+    }
+    .kategori-5Mobile a{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        float: left;
+        font-size: 10pt;
+        margin-left: 15%;
+        margin-top: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: dashed 2px black;
+        font-family: tilana;
+        color: white;
+        transition: all 0.5s;
+    }
+    .kategori-5Mobile a:hover{
+        width: 100px;
+        margin-left: 0;
+        border: none;
+        margin-top: 0;
+        height: 100px;
+        background-color:#404040;
+        color: white;
+        font-weight: bolder;
+        font-size: 15pt;
+        background-size: cover;
+    }
+
+    /* Bungkus artikel populer*/
+    .bungkusSubWebsite{
+        width: 50%;
+        height: 166px;
+        float: right;
+        border-bottom-right-radius: 120px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+        /*Scrollbar pilih sub-web */
+        .bungkusSubWebsite::-webkit-scrollbar {
+          width: 5px;
+          height: 90px;  
+        }
+        .bungkusSubWebsite::-webkit-scrollbar-track {
+          background: grey;
+          border-radius: 20px;
+        }
+        .bungkusSubWebsite::-webkit-scrollbar-thumb {
+          background: #333333;
+          border-radius: 20px;
+        }
+    .bungkusSubWebsite h2{
+      margin-top: 15%;
+      text-align: center;
+      font-family: elsie;
+      color:#52527a;
+    }
+    .subWebsite-1Mobile{
+      width: 100px;
+      height: 100px;
+      background-color: #3d3d5c;
+      margin: auto;
+    }
+    .subWebsite-1Mobile a{
+      width: 70px;
+      height: 70px;      
+      float: left;
+      background-color: mediumaquamarine;
+      margin-left: 15%;
+      margin-top: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border: dotted 2px black;
+      font-family: tilana;
+      font-size: 10pt;
+      color: white;
+      transition: all 0.5s;
+    }
+    .subWebsite-1Mobile a:hover{
+      background-image: url(img/sub_web/buku.jpg);
+      color: white;
+      font-weight: bolder;
+      font-size: 15pt;
+      background-size: cover;
+    }
+    .subWebsite-2Mobile{
+      width: 100px;
+      height: 100px;
+      background-color: #3d3d5c;
+      margin: auto;
+    }
+    .subWebsite-2Mobile a{
+      width: 70px;
+      height: 70px;      
+      float: left;
+      background-color: mediumaquamarine;
+      margin-left: 15%;
+      margin-top: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border: dotted 2px black;
+      font-family: tilana;
+      font-size: 10pt;
+      color: white;
+      transition: all 0.5s;
+    }
+    .subWebsite-2Mobile a:hover{
+      background-image: url(img/sub_web/coding.jpg);
+      color: white;
+      font-weight: bolder;
+      font-size: 15pt;
+      background-size: cover;
+    }
+    .subWebsite-3Mobile{
+      width: 100px;
+      height: 100px;
+      background-color: #3d3d5c;
+      margin: auto;
+    }
+    .subWebsite-3Mobile a{
+      width: 70px;
+      height: 70px;      
+      float: left;
+      background-color: mediumaquamarine;
+      margin-left: 15%;
+      margin-top: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border: dotted 2px black;
+      font-family: tilana;
+      font-size: 10pt;
+      color: white;
+      transition: all 0.5s;
+    }
+    .subWebsite-3Mobile a:hover{
+      background-image: url(img/sub_web/tutorial.jpg);
+      color: white;
+      font-weight: bolder;
+      font-size: 15pt;
+      background-size: cover;
+    }
+    .subWebsite-4Mobile{
+      width: 100px;
+      height: 100px;
+      background-color: #3d3d5c;
+      margin: auto;
+    }
+    .subWebsite-4Mobile a{
+      width: 70px;
+      height: 70px;      
+      float: left;
+      background-color: mediumaquamarine;
+      margin-left: 15%;
+      margin-top: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border: dotted 2px black;
+      font-family: tilana;
+      font-size: 10pt;
+      color: white;
+      transition: all 0.5s;
+    }
+    .subWebsite-4Mobile a:hover{
+      background-color:#404040;      
+      color: white;
+      font-weight: bolder;
+      font-size: 15pt;
+      background-size: cover;
+    } 
+} 
+
+@media screen and (min-width: 575.2px) {
+    .isiKontenPertamaMobile{
+        display: none;
+    }
+}
+/* Tutup mobile friendly */
+
+
+/*kolom Judul artikel, penulis, waktu, kategori, dan tags, untuk artikel yang akan dibaca*/
+@media screen and (min-width: 575.2px) and (max-width:767px) {
+  .judulArtikel{
+    background-color: #001a1a/* #9BD770 */;
+    height: 50%;
+    width: 60%;
+    border-radius: 30px;
+    border: outset #808080 4px;
+    float: left;
+  }
+  .isiJudulArtikel{
+    font-family: pica;
+    color: #b3b3b3;
+    text-align: center;
+    width:100%;
+    height: auto;
+    margin-top: 14%;
+  }
+  .isiJudulArtikel h1{
+    font-size: 25pt;
+  }
+  .pembuatTanggalKategoriTags{
+    background-color: #b3b3b3;
+    width:100%;
+    height: auto;
+    text-align: center;
+    font-family: monospace;
+    padding-top: 4px;
+  }
+
+  /* Kategori dan Artikel Terpopuler */
+  .bungkusLuar{
+    width: 480%;
+  }
+  .artikelTerpopuler{
+    height: auto;
+    width: 60%;
+    float: left;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-family: pica;
+    font-size: 18pt;
+    padding-left: 15px;
+    color: salmon;
+    border-left: 3px solid white;
+  }
+  
+  .bungkusDalam{
+    float: left;
+    margin-right: 20px;
+  }
+  .boxLuar{
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    border: 5px #808080 solid;
+    float: left;
+    margin-top: 40px;
+    border-radius: 50%;
+
+  }
+  .boxDalam img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px orange solid;
+  }
+  .boxDalam{
+    width: 70px;
+    height: 70px;
+    background-color: orange;
+    background-size: cover;
+    float: left;
+    margin-left: -40px;
+    position: relative;
+    border-radius: 50%;
+  }
+  .boxIsiArtikelTerpopuler{
+    width: 220px;
+    height: 80px;
+    margin-left: -45px;
+    background-color: #ffdab3;
+    border: solid #cbe0d3 3px;
+    float: left;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .boxIsiArtikelTerpopuler::-webkit-scrollbar{display: none;}
+  .boxIsiArtikelTerpopuler p{
+    width: 155px;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 5px;
+  }
+  .boxIsiArtikelTerpopuler a{
+    font-size: 12pt;
+    width: 155px;
+    height: auto;
+    font-family: tilana;
+    text-decoration: none;
+    color: brown;
+  }
+
+  .boxIsiArtikelTerpopuler a:hover{
+    color:grey;
+  }
+
+
+  /* Kategori */
+  
+  .kategori{
+    background-color:  #001a1a;
+    height: 100%;
+    float: right;
+    width: 38%;
+    border: outset #808080 4px;
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 120px;
+  }
+  .isiKategori{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+  .judulKategori{
+    font-family: elsie;
+    font-size: 18pt;
+    text-align: center;
+    color: #669999;
+  }
+  .boxKategori1, .boxKategori2, .boxKategori3, .boxKategori4,
+  .boxKategori5, .boxKategori6{
+    height: 100px;
+    width: 100px;
+    border-top-left-radius: 120px;
+    margin: auto;
+  }
+  .boxKategori1 a:link, .boxKategori2 a:link,.boxKategori3 a:link,
+  .boxKategori4 a:link, .boxKategori5 a:link,
+  .boxKategori6 a:link{
+    height: 80px;
+    width: 80px;
+    border-top-left-radius: 120px;
+    margin: auto;
+    text-decoration: none;
+  }
+  .boxDalamKategori{
+    margin: auto;
+    height: 80px;
+    width: 80px;
+    border: dashed 2px #262626;
+    border-top-left-radius: 120px;
+  }
+  .boxDalamKategori6{
+    margin: auto;
+    height: 80px;
+    width: 80px;
+    border: dashed 2px #262626;
+    border-top-left-radius: 120px;
+  }
+  .boxDalamKategori h6{
+    transform: rotate(-50deg);
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+  }
+  .boxDalamKategori6 h6{
+    transform: rotate(-50deg);
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+  }
+  .pilihKategori{
+    overflow: auto;
+    height: 58%;
+    border-top-left-radius: 120px;
+  }
+  .boxKategori1 a:hover{
+    background-image: url(img/kategori_bg/asa.jpg);
+    background-size: cover;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin-left:-12px;
+    margin-top: -16px;
+  }
+  .boxKategori2 a:hover{
+    background-image: url(img/kategori_bg/embara.jpg);
+    background-size: cover;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin-left:-12px;
+    margin-top: -16px;
+  }
+  .boxKategori3 a:hover{
+    background-image: url(img/kategori_bg/hikmah.jpg);
+    background-size: cover;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin-left:-12px;
+    margin-top: -16px;
+  }
+  .boxKategori4 a:hover{
+    background-image: url(img/kategori_bg/nadir.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin-left:-12px;
+    margin-top: -16px;
+  }
+  .boxKategori5 a:hover{
+    background-image: url(img/kategori_bg/nelangsa.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin-left:-12px;
+    margin-top: -16px;
+  }
+  .boxKategori6 a:hover{
+    background-color: thistle;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin-left:-12px;
+    margin-top: -16px;
+  }
+.pilihWeb::-webkit-scrollbar {
+  width: 10px;
+}
+.pilihWeb::-webkit-scrollbar-track {
+  background: #666;
+  border-radius: 20px;
+
+}
+.pilihWeb::-webkit-scrollbar-thumb {
+  background: #232323;
+  border-radius: 20px;
+}
+
+}
+@media screen and (min-width: 767.3px) {
+  .judulArtikel{
+    background-color: #001a1a/* #9BD770 */;
+    height: 50%;
+    width: 60%;
+    border-radius: 30px;
+    border: outset #808080 4px;
+    float: left;
+  }
+  .isiJudulArtikel{
+    font-family: pica;
+    color: #b3b3b3;
+    text-align: center;
+    width:100%;
+    height: auto;
+    margin-top: 11%;
+  }
+  .isiJudulArtikel h1{
+    font-size: 35pt;
+  }
+  .pembuatTanggalKategoriTags{
+    background-color: #b3b3b3;
+    width:100%;
+    height: 10%;
+    text-align: center;
+    font-family: monospace;
+    padding-top: 4px;
+  }
+  .bungkusLuar{
+    width: 400%;
+  }
+  .artikelTerpopuler{
+    height: 7%;
+    width: 60%;
+    float: left;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    font-family: pica;
+    font-size: 20pt;
+    padding-left: 15px;
+    color: salmon;
+    border-left: 3px solid white;
+  }
+  .bungkusDalam{
+    float: left;
+    margin-right: 20px;
+  }
+  .boxLuar{
+    width: 55px;
+    height: 55px;
+    background-color: black;
+    border: 5px #808080 solid;
+    float: left;
+    margin-top: 40px;
+    border-radius: 50%;
+
+  }
+  
+  .boxDalam{
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+    float: left;
+    margin-left: -40px;
+    position: relative;
+    border-radius: 50%;
+  }
+  .boxDalam img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px orange solid;
+  }
+  .boxIsiArtikelTerpopuler{
+    width: 250px;
+    height: 100px;
+    margin-left: -45px;
+    background-color: #ffdab3;
+    border: solid #cbe0d3 3px;
+    float: left;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.boxIsiArtikelTerpopuler::-webkit-scrollbar{
+  display: none;
+}
+.boxIsiArtikelTerpopuler p{
+  width: 220px;
+  height: auto;
+  margin-left: 50px;
+}
+.boxIsiArtikelTerpopuler p{
+  width: 175px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+.boxIsiArtikelTerpopuler a{
+  font-size: 14pt;
+  width: 155px;
+  height: auto;
+  font-family: tilana;
+  text-decoration: none;
+  color: brown;
+}
+.boxIsiArtikelTerpopuler a:hover{
+  color: #ff99ff;
+}
+.line2ArtikelTerpopulerTabletPC:hover{
+  color: #ff99ff;
+}
+  /* Kategori */
+  
+.kategori{
+	background-color:  #001a1a;
+	height: 100%;
+    float: right;
+	width: 38%;
+	border: outset #808080 4px;
+	border-top-left-radius: 120px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 120px;
+}
+.isiKategori{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+.judulKategori{
+  font-family: elsie;
+  font-size: 20pt;
+  text-align: center;
+  color: #669999;
+}
+.boxKategori1, .boxKategori2, .boxKategori3, .boxKategori4,
+.boxKategori5, .boxKategori6{
+  height: 110px;
+  width: 110px;
+  /*border-radius: /*120px 50%;*/
+  border-top-left-radius: 120px;
+  margin: auto;
+}
+.boxKategori1 a:link, .boxKategori2 a:link,.boxKategori3 a:link,
+.boxKategori4 a:link, .boxKategori5 a:link,
+.boxKategori6 a:link{
+  height: 80px;
+  width: 80px;
+  /*border-radius: /*120px 50%;*/
+  border-top-left-radius: 120px;
+  margin: auto;
+  text-decoration: none;
+}
+.boxDalamKategori{
+  margin: auto;
+  height: 80px;
+  width: 80px;
+  border: dashed 2px #262626;
+  border-top-left-radius: 120px;
+}
+.boxDalamKategori6{
+  margin: auto;
+  height: 80px;
+  width: 80px;
+  border: dashed 2px #262626;
+  border-top-left-radius: 120px;
+}
+.boxDalamKategori h6{
+  transform: rotate(-50deg);
+  margin-top: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: white;
+}
+.boxDalamKategori6 h6{
+  transform: rotate(-50deg);
+  margin-top: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: white;
+}
+.pilihKategori{
+  overflow: auto;
+  height: 58%;
+  border-top-left-radius: 120px;
+}
+.pilihWeb::-webkit-scrollbar {
+  width: 10px;
+}
+.pilihWeb::-webkit-scrollbar-track {
+  background: #666;
+  border-radius: 20px;
+
+}
+.pilihWeb::-webkit-scrollbar-thumb {
+  background: #232323;
+  border-radius: 20px;
+}
+}
+
+/* Akhir judul untuk kolom artikel */
+.artikelTerpopuler a{
+  text-decoration: none;
+  color: lavender;
+}
+.artikelTerpopuler a:hover{
+  text-decoration: none;
+  color: orange;
+}
+.judulArtikelTerpopuler{
+  background-color: none;
+  width: 60%;
+  height:25%;
+  float: left;
+  margin-top: 2%;
+  overflow-y:hidden;
+  overflow-x:scroll;
+}
+.judulArtikelTerpopuler::-webkit-scrollbar {
+  width: 10px;
+}
+.judulArtikelTerpopuler::-webkit-scrollbar-track {
+  background: #666;
+  border-radius: 20px;
+}
+.judulArtikelTerpopuler::-webkit-scrollbar-thumb {
+  background: #232323;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1220px) {
+  .bungkusLuar{
+    width: 290%;
+  }
+  .artikelTerpopuler{
+    height: 7%;
+    width: 60%;
+    float: left;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    font-family: pica;
+    font-size: 25pt;
+    padding-left: 15px;
+    color: salmon;
+    border-left: 3px solid white;
+  }
+  
+}
+@media screen and (min-width: 1221px) and (max-width: 1320px) {
+  .bungkusLuar{
+    width: 250%;
+  }
+  .artikelTerpopuler{
+    height: 7%;
+    width: 60%;
+    float: left;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    font-family: pica;
+    font-size: 25pt;
+    padding-left: 15px;
+    color: salmon;
+    border-left: 3px solid white;
+  }
+}
+@media screen and (min-width: 1321px) and (max-width: 8000px) {
+  .bungkusLuar{
+    width: 220%;
+  }
+  .artikelTerpopuler{
+    height: 7%;
+    width: 60%;
+    float: left;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    font-family: pica;
+    font-size: 30pt;
+    padding-left: 15px;
+    color: salmon;
+    border-left: 3px solid white;
+  }
+}
+
+
+/* Pilih Web */
+.pilihWebBungkusDalam{
+  float: left;
+  margin-right: 10px;
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .lingkarPilihWeb{
+    border-radius: 50%;
+    height:100px;
+    width:100px;
+    background-color: mediumaquamarine;
+    margin-top: -5%;
+    margin-left: -2%;
+    
+  }
+  .lingkarPilihWeb a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    font-size: 12pt;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.4s;
+  }
+  .lingkarPilihWeb a:hover{
+    height: 100px;
+    width: 100px;
+    background-color: #ffc2c2;
+    border-radius: 50%;
+  }
+  .pilihWeb{
+    width: 120px;
+    height: 120px;
+    overflow-y:hidden;
+    overflow-x:scroll;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #3d3d5c;
+    margin-left: 12px;
+  }
+  .captionPilihWebLainDesktop{
+    font-family: kenia;
+    font-size: 14pt;
+    color:#52527a;
+  }
+  .pilihWebBungkusLuar{
+    width: 580%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .lingkarPilihWeb{
+    border-radius: 50%;
+    height:110px;
+    width:110px;
+    background-color: mediumaquamarine;
+    margin-top: -4%;
+    margin-left: -2%;
+  }
+  .lingkarPilihWeb a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    width: 110px;
+    font-size: 12pt;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.4s;
+  }
+  .lingkarPilihWeb a:hover{
+    height: 110px;
+    width: 110px;
+    background-color: #ffc2c2;
+    border-radius: 50%;
+  }
+  .pilihWeb{
+    width: 130px;
+    height: 130px;
+    overflow-y:hidden;
+    overflow-x:scroll;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #3d3d5c;
+  }
+  .captionPilihWebLainDesktop{
+    font-family: kenia;
+    font-size: 15pt;
+    color:#52527a;
+  }
+  .boxKategori1 a:hover{
+    background-image: url(img/kategori_bg/asa.jpg);
+    background-size: cover;
+    position: relative;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+    margin-top: -16px;
+  }
+  .boxKategori2 a:hover{
+    background-image: url(img/kategori_bg/embara.jpg);
+    background-size: cover;
+    position: relative;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+    margin-top: -16px;
+  }
+  .boxKategori3 a:hover{
+    background-image: url(img/kategori_bg/hikmah.jpg);
+    background-size: cover;
+    position: relative;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+    margin-top: -16px;
+  }
+  .boxKategori4 a:hover{
+    background-image: url(img/kategori_bg/nadir.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+    margin-top: -16px;
+  }
+  .boxKategori5 a:hover{
+    background-image: url(img/kategori_bg/nelangsa.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+    margin-top: -16px;
+  }
+  .boxKategori6 a:hover{
+    background-color: thistle;
+    position: relative;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+    margin-top: -16px;
+  }
+  .pilihWebBungkusLuar{
+    width: 570%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+  .lingkarPilihWeb{
+    border-radius: 50%;
+    height:150px;
+    width:150px;
+    background-color: mediumaquamarine;
+    margin-top: -3%;
+    margin-left: -1%;
+  }
+  .lingkarPilihWeb a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    font-size: 14pt;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.4s;
+  }
+  .lingkarPilihWeb a:hover{
+    height: 150px;
+    width: 150px;
+    background-color: #ffc2c2;
+    border-radius: 50%;
+  }
+  .pilihWeb{
+    width: 170px;
+    height: 170px;
+    overflow-y:hidden;
+    overflow-x:scroll;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #3d3d5c;
+  }
+  .captionPilihWebLainDesktop{
+    font-family: kenia;
+    font-size: 20pt;
+    color: #52527a;
+  }
+  .boxKategori1 a:hover{
+    background-image: url(img/kategori_bg/asa.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+  }
+  .boxKategori2 a:hover{
+    background-image: url(img/kategori_bg/embara.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+  }
+  .boxKategori3 a:hover{
+    background-image: url(img/kategori_bg/hikmah.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+  }
+  .boxKategori4 a:hover{
+    background-image: url(img/kategori_bg/nadir.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+  }
+  .boxKategori5 a:hover{
+    background-image: url(img/kategori_bg/nelangsa.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+  }
+  .boxKategori6 a:hover{
+    background-color: thistle;
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+    }
+  .pilihWebBungkusLuar{
+    width: 570%;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 8000px) {
+  .lingkarPilihWeb{
+    border-radius: 50%;
+    height:150px;
+    width:150px;
+    background-color: mediumaquamarine;
+    margin-top: -3%;
+    margin-left: -1%;
+  }
+  .lingkarPilihWeb a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    font-size: 14pt;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.4s;
+  }
+  .lingkarPilihWeb a:hover{
+    height: 150px;
+    width: 150px;
+    background-color: #ffc2c2;
+    border-radius: 50%;
+  }
+  .pilihWeb{
+    width: 170px;
+    height: 170px;
+    overflow-y:hidden;
+    overflow-x:scroll;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #3d3d5c;
+  }
+  .captionPilihWebLainDesktop{
+    font-family: kenia;
+    font-size: 25pt;
+    color: #52527a;
+  }
+  .boxKategori1 a:hover{
+    background-image: url(img/kategori_bg/asa.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+    margin-top: 0px;
+  }
+  .boxKategori2 a:hover{
+    background-image: url(img/kategori_bg/embara.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+    margin-top: 0px;
+  }
+  .boxKategori3 a:hover{
+    background-image: url(img/kategori_bg/hikmah.jpg);
+    background-size: cover;
+    position:   absolute;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+    margin-top: 0px;
+  }
+  .boxKategori4 a:hover{
+    background-image: url(img/kategori_bg/nadir.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+    margin-top: 0px;
+  }
+  .boxKategori5 a:hover{
+    background-image: url(img/kategori_bg/nelangsa.jpg);
+    opacity: 0.6;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+    margin-top: 0;
+  }
+  .boxKategori6 a:hover{
+    background-color: thistle;
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    margin-left:-12px;
+    margin-top: 0px;
+  }
+  .pilihWebBungkusLuar{
+    width: 560%;
+  }
+}
+
+/* Scroll bar untuk web lainnya */
+.pilihKategori::-webkit-scrollbar {
+  width: 10px;
+}
+.pilihKategori::-webkit-scrollbar-track {
+  background: #666;
+  border-radius: 20px;
+
+}
+.pilihKategori::-webkit-scrollbar-thumb {
+  background: #232323;
+  border-radius: 20px;
+
+}
+
+/* End scrollbar dari web lain */
+
+/* img artikel =========================================================================================*/
+@media screen and (min-width: 1px) and (max-width: 575px) {
+  .imgArtikel{
+    background-color: #293d3d;
+    height: 420px;
+    margin: auto;
+    overflow: auto;
+    width: 85%;
+  }
+  .imgArtikelPerBaris {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  .column img {
+    margin-top: 6px;
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 6px;
+  }
+}
+@media screen and (min-width: 575.2px) and (max-width: 767px) {
+  .imgArtikel{
+    background-color: #293d3d;
+    height: 470px;
+    margin: auto;
+    overflow: auto;
+    width: 90%;
+  }
+  .imgArtikelPerBaris {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  .column img {
+    margin-top: 6px;
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 6px;
+  }
+}
+@media screen and (min-width: 767.2px) {
+  .imgArtikel{
+    background-color: #293d3d;
+    height: 500px;
+    margin: auto;
+    overflow: auto;
+  }
+  .imgArtikelPerBaris {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 6px;
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 6px;
+  }
+}
+.imgArtikel::-webkit-scrollbar {
+    width: 20px;
+}
+.imgArtikel::-webkit-scrollbar-track {
+    background: #666;
+    border-radius: 30px;
+}
+.imgArtikel::-webkit-scrollbar-thumb {
+    background: #232323;
+    border-radius: 30px;
+}
+
+/* penyesuaian img artikel */
+/* Responsive layout img artikel */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* end img artikel
+
+/* Tulisan artikel */
+.parentLuarTulisanArtikel{
+  height: auto;
+  background-color:#334d4d;
+  border-radius: 25px;
+}
+/* Responsif */
+@media screen and (min-width: 1px) and (max-width: 575px) {
+  .isiKontenKetigaMobile{
+    height: 100%;
+    padding: 15px;
+  }
+  .tulisanArtikelMobile{
+    background: linear-gradient(to right, #001a1a 0%, #001a0d 100%);
+    border: 3px solid #4d4d4d;
+    border-radius: 25px;
+    height: 100%;
+    padding: 15px;
+    width: 100%;
+  }
+  .isiTulisanArtikelMobile{
+    font-family: pica;
+    color:  #e6ccb3;
+    font-size: 14pt;
+    text-align: justify;
+    line-height: 180%;
+  }
+}
+@media screen and (min-width: 575.2px) and (max-width: 767px) {
+  .isiKontenKetigaMobile{
+    display: none;
+  }
+  .parentDalamTulisanArtikel{
+    height: 100%;
+    padding: 20px;
+  }
+  .tulisanArtikel{
+    background: linear-gradient(to right, #001a1a 0%, #001a0d 100%);
+    border: 3px solid #4d4d4d;
+    border-radius: 25px;
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+  }
+  .tulisanArtikel p{
+    font-family: pica;
+    color:  #e6ccb3;
+    font-size: 14pt;
+    text-align: justify;
+    line-height: 180%;
+  }
+  .isiTulisanArtikel a{
+    color: #99ffcc;
+    text-decoration: none;
+  }  
+  .isiTulisanArtikel a:hover{
+    color: #99ffff;
+  }
+  .isiTulisanArtikel h1{
+    color: #663300;
+  }
+}
+@media screen and (min-width: 767.2px) and (max-width: 8000px) {
+  .isiKontenKetigaMobile{
+    display: none;
+  }
+  .parentDalamTulisanArtikel{
+    height: 100%;
+    padding: 30px;
+  }
+  .tulisanArtikel{
+    background: linear-gradient(to right, #001a1a 0%, #001a0d 100%);
+    border: 3px solid #4d4d4d;
+    border-radius: 25px;
+    height: 100%;
+    padding: 30px;
+    width: 90%;
+  }
+  .tulisanArtikel p{
+    font-family: pica;
+    color:  #e6ccb3;
+    font-size: 18pt;
+    text-align: justify;
+    line-height: 180%;
+  }
+  .isiTulisanArtikel a{
+    color: #99ffcc;
+    text-decoration: none;
+  }
+  .isiTulisanArtikel a:hover{
+    color: #99ffff;
+  }
+  .isiTulisanArtikel h1{
+    color: #663300;
+  }
+}
+/* Tutup tulisan artikel */
+
+
+/* Khusus Halaman Konstelasi Artikel */
+.tulisanArtikelKonstelasiArtikel{
+  background: linear-gradient(to right, #001a1a 0%, #001a0d 100%);
+  border: 3px solid #4d4d4d;
+  border-radius: 25px;
+  height: 100%;
+  padding: 25px;
+  width: 100%;}
+.parentLuarTulisanArtikelKonstelasiArtikel{
+  height: auto;
+  background-color:#334d4d;
+  border-radius: 25px;}
+/* Tutup Halaman */
+.teksIkutiKami h3{
+  font-family: oregano;
+  font-size: 35pt;
+  color: white;}
+.teksIkutiKami h5{
+  font-family: oregano;
+  font-size: 25pt;
+  color: white;}
+.asterisk{
+  color: red;}
+
+
+/* Artikel Terpopuler dan Artikel Terbaru Mobile Friendly*/
+@media screen and (min-width: 10px) and (max-width: 390px){
+  .parentLuarArtikelTerbaruTabletPC{
+    display: none;
+  }
+  .parentLuarArtikelTerbaruDanTerpopulerMobile{
+    height: auto;
+    background-color:#334d4d;
+    border-radius: 25px;
+  }
+  .parentDalamArtikelTerbaruDanTerpopulerMobile{
+    height: 100%;
+    padding: 20px;
+  }
+  .parentDalamArtikelTerbaruDanTerpopulerMobile h2{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: pica;
+  }
+  .bungkusLuarArtikelTerpopulerMobile{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 120px;
+    background-color: #001a1a;
+    border-radius: 20px;
+  }
+  .bungkusLuarArtikelTerpopulerMobile::-webkit-scrollbar{display: none;}
+  .bungkusDalamArtikelTerpopulerMobile{
+    margin-top: 20px;
+    width: 500%;
+  }
+  .komponenArtikelTerpopulerMobile{
+    float: left;
+    margin-right: 20px;
+  }
+  .lingkaran-1{
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border: 5px #808080 solid;
+    float: left;
+    margin-top: 22px;
+    margin-left: 5px;
+    border-radius: 50%;
+    
+  }
+  .lingkaran-2{
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    float: left;
+    margin-left: -25px;
+    position: relative;
+    border-radius: 50%;
+  }
+  .lingkaran-2 img{
+    width: 50px;
+    height: 50px;
+    border: 3px orange solid;
+    border-radius: 50%;
+  }
+  .boxIsiArtikelTerpopulerMobile{
+    width: 180px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: -35px;
+    background-color: #ffdab3;
+    border: solid #cbe0d3 3px;
+    float: left;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .boxIsiArtikelTerpopulerMobile::-webkit-scrollbar{
+    display: none;
+  }
+  .boxIsiArtikelTerpopulerMobile p{
+    width: 130px;
+    font-size: 7pt;
+    height: auto;
+    margin-left: 40px;
+    color: grey;
+  }
+  .boxIsiArtikelTerpopulerMobile a{
+    text-decoration: none;
+    color: black;
+    font-size: 10pt;
+  }
+  .line1:hover{
+    color: salmon;
+  }
+  .line2:hover{color: white;}
+  
+  /* Artikel terbaru */
+  .bungkusLuarArtikelTerbaruMobile{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: auto;
+    background-color: #001a1a;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .bungkusLuarArtikelTerbaruMobile::-webkit-scrollbar{display: none;}
+  .bungkusDalamArtikelTerbaruMobile{
+    margin-top: 20px;
+    width: 300%;
+  }
+  .komponenArtikelTerbaruMobile{
+    float: left;
+    margin-right: 20px;
+  }
+  .kotak-1{
+    width: 100px;
+    height: 80px;
+    background-color: black;
+    margin-left: 15px;
+  }
+  .kotak-1 img{
+    width: 100px;
+    height:80px;
+    border: 5px solid #808080;
+  }
+  .captionKotakArtikelTerbaruMobile{
+    width: 90px;
+    color: white;
+    text-align: center;
+    font-size: 10pt;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  .captionKotakArtikelTerbaruMobileLainnya{
+    width: 100px;
+    border: 5px solid #808080;
+    display: flex;
+    font-family: winds;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    height: 80px;
+    background-color: black;
+  }
+  .captionKotakArtikelTerbaruMobileLainnya a{
+    color: white;
+    text-decoration: none;
+  }
+  .captionKotakArtikelTerbaruMobileLainnya a:hover{
+    color: burlywood;
+    text-decoration: underline;
+  }
+  .listCaptionArtikelTerbaruMobile li{
+    color: #b3b3b3;
+    width: 85%;
+    margin-left: 15px;
+    font-size: 7pt;
+  }
+  .captionKotakArtikelTerbaruMobile a{text-decoration: none; color: white;}
+  .captionKotakArtikelTerbaruMobile a:hover{text-decoration: underline; color: burlywood;}
+  .listCaptionArtikelTerbaruMobile a{color: #b3b3b3; text-decoration: none; transition: all 0.3s;}
+  .listCaptionArtikelTerbaruMobile a:hover{text-decoration: underline; color: #ffcccc;}
+  /* Tutup */
+}
+@media screen and (min-width: 390.3px) and (max-width: 440px){
+  .parentLuarArtikelTerbaruTabletPC{
+    display: none;
+  }
+  .parentLuarArtikelTerbaruDanTerpopulerMobile{
+    height: auto;
+    background-color:#334d4d;
+    border-radius: 25px;
+  }
+  .parentDalamArtikelTerbaruDanTerpopulerMobile{
+    height: 100%;
+    padding: 20px;
+  }
+  .parentDalamArtikelTerbaruDanTerpopulerMobile h2{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: pica;
+  }
+  .bungkusLuarArtikelTerpopulerMobile{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 120px;
+    background-color: #001a1a;
+    border-radius: 20px;
+  }
+  .bungkusLuarArtikelTerpopulerMobile::-webkit-scrollbar{display: none;}
+  .bungkusDalamArtikelTerpopulerMobile{
+    margin-top: 20px;
+    width: 400%;
+  }
+  .komponenArtikelTerpopulerMobile{
+    float: left;
+    margin-right: 20px;
+  }
+  .lingkaran-1{
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border: 5px #808080 solid;
+    float: left;
+    margin-top: 22px;
+    margin-left: 5px;
+    border-radius: 50%;
+    
+  }
+  .lingkaran-2{
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    float: left;
+    margin-left: -25px;
+    position: relative;
+    border-radius: 50%;
+  }
+  .lingkaran-2 img{
+    width: 50px;
+    height: 50px;
+    border: 3px orange solid;
+    border-radius: 50%;
+  }
+  .boxIsiArtikelTerpopulerMobile{
+    width: 180px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: -35px;
+    background-color: #ffdab3;
+    border: solid #cbe0d3 3px;
+    float: left;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .boxIsiArtikelTerpopulerMobile::-webkit-scrollbar{
+    display: none;
+  }
+  .boxIsiArtikelTerpopulerMobile p{
+    width: 130px;
+    font-size: 7pt;
+    height: auto;
+    margin-left: 40px;
+    color: grey;
+  }
+  .boxIsiArtikelTerpopulerMobile a{
+    text-decoration: none;
+    color: black;
+    font-size: 10pt;
+  }
+  .line1:hover{
+    color: salmon;
+  }
+  .line2:hover{color: white;}
+  
+  /* Artikel terbaru */
+  .bungkusLuarArtikelTerbaruMobile{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: auto;
+    background-color: #001a1a;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .bungkusLuarArtikelTerbaruMobile::-webkit-scrollbar{display: none;}
+  .bungkusDalamArtikelTerbaruMobile{
+    margin-top: 20px;
+    width: 250%;
+  }
+  .komponenArtikelTerbaruMobile{
+    float: left;
+    margin-right: 20px;
+  }
+  .kotak-1{
+    width: 100px;
+    height: 80px;
+    background-color: black;
+    margin-left: 15px;
+  }
+  .kotak-1 img{
+    width: 100px;
+    height:80px;
+    border: 5px solid #808080;
+  }
+  .captionKotakArtikelTerbaruMobile{
+    width: 90px;
+    color: white;
+    text-align: center;
+    font-size: 10pt;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  .captionKotakArtikelTerbaruMobileLainnya{
+    width: 100px;
+    border: 5px solid #808080;
+    display: flex;
+    font-family: winds;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    height: 80px;
+    background-color: black;
+  }
+  .captionKotakArtikelTerbaruMobileLainnya a{
+    color: white;
+    text-decoration: none;
+  }
+  .captionKotakArtikelTerbaruMobileLainnya a:hover{
+    color: burlywood;
+    text-decoration: underline;
+  }
+  .listCaptionArtikelTerbaruMobile li{
+    color: #b3b3b3;
+    width: 85%;
+    margin-left: 15px;
+    font-size: 7pt;
+  }
+  .captionKotakArtikelTerbaruMobile a{text-decoration: none; color: white;}
+  .captionKotakArtikelTerbaruMobile a:hover{text-decoration: underline; color: burlywood;}
+  .listCaptionArtikelTerbaruMobile a{color: #b3b3b3; text-decoration: none; transition: all 0.3s;}
+  .listCaptionArtikelTerbaruMobile a:hover{text-decoration: underline; color: #ffcccc;}
+  /* Tutup */
+}
+@media screen and (min-width: 440.3px) and (max-width: 475px){
+  .parentLuarArtikelTerbaruTabletPC{
+    display: none;
+  }
+  .parentLuarArtikelTerbaruDanTerpopulerMobile{
+    height: auto;
+    background-color:#334d4d;
+    border-radius: 25px;
+  }
+  .parentDalamArtikelTerbaruDanTerpopulerMobile{
+    height: 100%;
+    padding: 20px;
+  }
+  .parentDalamArtikelTerbaruDanTerpopulerMobile h2{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: pica;
+  }
+  .bungkusLuarArtikelTerpopulerMobile{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 120px;
+    background-color: #001a1a;
+    border-radius: 20px;
+  }
+  .bungkusLuarArtikelTerpopulerMobile::-webkit-scrollbar{display: none;}
+  .bungkusDalamArtikelTerpopulerMobile{
+    margin-top: 20px;
+    width: 350%;
+  }
+  .komponenArtikelTerpopulerMobile{
+    float: left;
+    margin-right: 20px;
+  }
+  .lingkaran-1{
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border: 5px #808080 solid;
+    float: left;
+    margin-top: 22px;
+    margin-left: 5px;
+    border-radius: 50%;
+    
+  }
+  .lingkaran-2{
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    float: left;
+    margin-left: -25px;
+    position: relative;
+    border-radius: 50%;
+  }
+  .lingkaran-2 img{
+    width: 50px;
+    height: 50px;
+    border: 3px orange solid;
+    border-radius: 50%;
+  }
+  .boxIsiArtikelTerpopulerMobile{
+    width: 180px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: -35px;
+    background-color: #ffdab3;
+    border: solid #cbe0d3 3px;
+    float: left;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .boxIsiArtikelTerpopulerMobile::-webkit-scrollbar{
+    display: none;
+  }
+  .boxIsiArtikelTerpopulerMobile p{
+    width: 130px;
+    font-size: 7pt;
+    height: auto;
+    margin-left: 40px;
+    color: grey;
+  }
+  .boxIsiArtikelTerpopulerMobile a{
+    text-decoration: none;
+    color: black;
+    font-size: 10pt;
+  }
+  
+  .line1:hover{
+    color: salmon;
+  }
+  .line2:hover{color: white;}
+  /* Artikel terbaru */
+  .bungkusLuarArtikelTerbaruMobile{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: auto;
+    background-color: #001a1a;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .bungkusLuarArtikelTerbaruMobile::-webkit-scrollbar{display: none;}
+  .bungkusDalamArtikelTerbaruMobile{
+    margin-top: 20px;
+    width: 200%;
+  }
+  .komponenArtikelTerbaruMobile{
+    float: left;
+    margin-right: 20px;
+  }
+  .kotak-1{
+    width: 100px;
+    height: 80px;
+    background-color: black;
+    margin-left: 15px;
+  }
+  .kotak-1 img{
+    width: 100px;
+    height: 80px;
+    border: 5px solid #808080;
+  }
+  .captionKotakArtikelTerbaruMobile{
+    width: 90px;
+    color: white;
+    text-align: center;
+    font-size: 10pt;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  .captionKotakArtikelTerbaruMobileLainnya{
+    width: 100px;
+    border: 5px solid #808080;
+    display: flex;
+    font-family: winds;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    height: 80px;
+    background-color: black;
+  }
+  .captionKotakArtikelTerbaruMobileLainnya a{
+    color: white;
+    text-decoration: none;
+  }
+  .captionKotakArtikelTerbaruMobileLainnya a:hover{
+    color: burlywood;
+    text-decoration: underline;
+  }
+  .listCaptionArtikelTerbaruMobile li{
+    color: #b3b3b3;
+    width: 85%;
+    margin-left: 15px;
+    font-size: 7pt;
+  }
+  .captionKotakArtikelTerbaruMobile a{text-decoration: none; color: white;}
+  .captionKotakArtikelTerbaruMobile a:hover{text-decoration: underline; color: burlywood;}
+  .listCaptionArtikelTerbaruMobile a{color: #b3b3b3; text-decoration: none; transition: all 0.3s;}
+  .listCaptionArtikelTerbaruMobile a:hover{text-decoration: underline; color: #ffcccc;}
+  /* Tutup */
+}
+@media screen and (min-width: 475.3px) and (max-width: 575px){
+  .parentLuarArtikelTerbaruTabletPC{
+    display: none;
+  }
+  .parentLuarArtikelTerbaruDanTerpopulerMobile{
+    height: auto;
+    background-color:#334d4d;
+    border-radius: 25px;
+  }
+  .parentDalamArtikelTerbaruDanTerpopulerMobile{
+    height: 100%;
+    padding: 20px;
+  }
+  .parentDalamArtikelTerbaruDanTerpopulerMobile h2{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: pica;
+  }
+  .bungkusLuarArtikelTerpopulerMobile{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 120px;
+    background-color: #001a1a;
+    border-radius: 20px;
+  }
+  .bungkusLuarArtikelTerpopulerMobile::-webkit-scrollbar{display: none;}
+  .bungkusDalamArtikelTerpopulerMobile{
+    margin-top: 20px;
+    width: 300%;
+  }
+  .komponenArtikelTerpopulerMobile{
+    float: left;
+    margin-right: 20px;
+  }
+  .lingkaran-1{
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border: 5px #808080 solid;
+    float: left;
+    margin-top: 22px;
+    margin-left: 5px;
+    border-radius: 50%;
+    
+  }
+  .lingkaran-2{
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    float: left;
+    margin-left: -25px;
+    position: relative;
+    border-radius: 50%;
+  }
+  .lingkaran-2 img{
+    width: 50px;
+    height: 50px;
+    border: 3px orange solid;
+    border-radius: 50%;
+  }
+  .boxIsiArtikelTerpopulerMobile{
+    width: 180px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: -35px;
+    background-color: #ffdab3;
+    border: solid #cbe0d3 3px;
+    float: left;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .boxIsiArtikelTerpopulerMobile::-webkit-scrollbar{
+    display: none;
+  }
+  .boxIsiArtikelTerpopulerMobile p{
+    width: 130px;
+    font-size: 7pt;
+    height: auto;
+    margin-left: 40px;
+    color: grey;
+  }
+  .boxIsiArtikelTerpopulerMobile a{
+    text-decoration: none;
+    color: black;
+    font-size: 10pt;
+  }
+  .line1:hover{
+    color: salmon;
+  }
+  .line2:hover{color: white;}
+  
+  /* Artikel terbaru */
+  .bungkusLuarArtikelTerbaruMobile{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: auto;
+    background-color: #001a1a;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .bungkusLuarArtikelTerbaruMobile::-webkit-scrollbar{display: none;}
+  .bungkusDalamArtikelTerbaruMobile{
+    margin-top: 20px;
+    width: 180%;
+  }
+  .komponenArtikelTerbaruMobile{
+    float: left;
+    margin-right: 20px;
+  }
+  .kotak-1{
+    width: 100px;
+    height: 80px;
+    background-color: black;
+    margin-left: 15px;
+  }
+  
+  .kotak-1 img{
+    width: 100px;
+    height: 80px;
+    border: 5px solid #808080;
+  }
+  .captionKotakArtikelTerbaruMobile{
+    width: 90px;
+    color: white;
+    text-align: center;
+    font-size: 10pt;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  .captionKotakArtikelTerbaruMobileLainnya{
+    width: 100px;
+    border: 5px solid #808080;
+    display: flex;
+    font-family: winds;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    height: 80px;
+    background-color: black;
+  }
+  .captionKotakArtikelTerbaruMobileLainnya a{
+    color: white;
+    text-decoration: none;
+  }
+  .captionKotakArtikelTerbaruMobileLainnya a:hover{
+    color: burlywood;
+    text-decoration: underline;
+  }
+  .listCaptionArtikelTerbaruMobile li{
+    color: #b3b3b3;
+    width: 85%;
+    margin-left: 15px;
+    font-size: 7pt;
+  }
+  .captionKotakArtikelTerbaruMobile a{text-decoration: none; color: white;}
+  .captionKotakArtikelTerbaruMobile a:hover{text-decoration: underline; color: burlywood;}
+  .listCaptionArtikelTerbaruMobile a{color: #b3b3b3; text-decoration: none; transition: all 0.3s;}
+  .listCaptionArtikelTerbaruMobile a:hover{text-decoration: underline; color: #ffcccc;}
+  /* Tutup */
+}
+
+
+/* Artikel Terbaru dan Komentar For Tablet, PC, and Monitor Above */
+@media screen and (min-width: 575.3px) and (max-width: 767px) {
+  .parentLuarArtikelTerbaruDanTerpopulerMobile{
+    display: none;
+  }
+  .parentLuarArtikelTerbaruTabletPC{
+    height: auto;
+    background-color:#334d4d;
+    border-radius: 25px;
+  }
+  .parentDalamArtikelTerbaruTabletPC{
+    height: 100%;
+    padding: 20px;
+  }
+  .parentDalamArtikelTerbaruTabletPC h2{
+    
+      margin-top: 10px;
+      font-family: pica;
+  }
+  .komponenArtikelTerbaruTabletPC{
+    float: left;
+    margin-right: 20px;
+  }
+  .bungkusLuarArtikelTerbaruTabletPC{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: auto;
+    border-radius: 20px;
+  }
+  .bungkusLuarArtikelTerbaruTabletPC::-webkit-scrollbar{display: none;}
+  .bungkusDalamArtikelTerbaruTabletPC{
+    margin-top: 10px;
+    width: 245%;
+  }
+  .bgArtikelTerbaru{
+    width: 200px;
+    background-color: #9999ff;
+    height: 150px;
+  }
+  .bgArtikelTerbaru img{
+    width: 200px;
+    height: 150px;
+    border: 3px solid #9999ff;
+  }
+  .judulArtikelTerbaruTabletPC{
+    width: 200px;
+    background-color: lavender;
+    padding: 5px;
+    height: auto;
+    text-align: center;
+    font-size: 12pt;
+    margin-bottom: 3%;
+  }
+  .judulArtikelTerbaruTabletPC p{
+    color: grey;
+    width: 85%;
+    margin: auto;
+    font-size: 11pt;
+  }
+  .judulArtikelTerbaruTabletPC a{text-decoration: none; color: black;}
+  .judulArtikelTerbaruTabletPC a:hover{color: slateblue;}
+  .listCaptionArtikelTerbaruTabletPC a{color: black; text-decoration: none; transition: all 0.3s;}
+  .listCaptionArtikelTerbaruTabletPC a:hover{text-decoration: underline; color: #ffcccc;}
+}
+@media screen and (min-width: 767.3px) and (max-width: 1120px) {
+  .parentLuarArtikelTerbaruDanTerpopulerMobile{
+    display: none;
+  }
+  .parentLuarArtikelTerbaruTabletPC{
+    height: auto;
+    background-color:#334d4d;
+    border-radius: 25px;
+  }
+  .parentDalamArtikelTerbaruTabletPC{
+    height: 100%;
+    padding: 20px;
+  }
+  .parentDalamArtikelTerbaruTabletPC h2{
+    
+    margin-top: 10px;
+    font-family: pica;
+  }
+  .komponenArtikelTerbaruTabletPC{
+    float: left;
+    margin-right: 20px;
+  }
+  .bungkusLuarArtikelTerbaruTabletPC{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+  .bungkusLuarArtikelTerbaruTabletPC::-webkit-scrollbar{width: 5px;}.bungkusLuarArtikelTerbaruTabletPC::-webkit-scrollbar-thumb{background: #232323;  border-radius: 30px; width: 10px;}
+  .bungkusDalamArtikelTerbaruTabletPC{
+    margin-top: 10px;
+    width: 180%;
+  }
+  .bgArtikelTerbaru{
+    width: 200px;
+    background-color: #9999ff;
+    height: 150px;
+  }
+  .bgArtikelTerbaru img{
+    width: 200px;
+    height: 150px;
+    border: 3px solid #9999ff;
+  }
+  .judulArtikelTerbaruTabletPC{
+    width: 200px;
+    background-color: lavender;
+    padding: 5px;
+    height: auto;
+    text-align: center;
+    font-size: 12pt;
+    margin-bottom: 3%;
+  }
+  .judulArtikelTerbaruTabletPC p{
+    color: grey;
+    width: 85%;
+    margin: auto;
+    font-size: 11pt;
+  }
+ 
+  .judulArtikelTerbaruTabletPC a{text-decoration: none; color: black;}
+  .judulArtikelTerbaruTabletPC a:hover{color: slateblue; text-decoration: underline;}
+  .listCaptionArtikelTerbaruTabletPC a{color: grey; text-decoration: none; transition: all 0.3s;}
+  .listCaptionArtikelTerbaruTabletPC a:hover{text-decoration: underline; color: #ffcccc;}
+}
+@media screen and (min-width: 1120.3px) and (max-width: 1280px) {
+  .parentLuarArtikelTerbaruDanTerpopulerMobile{
+    display: none;
+  }
+  .parentLuarArtikelTerbaruTabletPC{
+    height: auto;
+    background-color:#334d4d;
+    border-radius: 25px;
+  }
+  .parentDalamArtikelTerbaruTabletPC{
+    height: 100%;
+    padding: 20px;
+  }
+  .parentDalamArtikelTerbaruTabletPC h2{
+    
+    margin-top: 10px;
+    font-family: pica;
+  }
+  .komponenArtikelTerbaruTabletPC{
+    float: left;
+    margin-right: 20px;
+  }
+  .bungkusLuarArtikelTerbaruTabletPC{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+  .bungkusLuarArtikelTerbaruTabletPC::-webkit-scrollbar{width: 5px;}.bungkusLuarArtikelTerbaruTabletPC::-webkit-scrollbar-thumb{background: #232323;  border-radius: 30px; width: 10px;}
+  .bungkusDalamArtikelTerbaruTabletPC{
+    margin-top: 10px;
+    width: 130%;
+  }
+  .bgArtikelTerbaru{
+    width: 200px;
+    background-color: #9999ff;
+    height: 150px;
+  }
+  .bgArtikelTerbaru img{
+    width: 200px;
+    height: 150px;
+    border: 3px solid #9999ff;
+  }
+  .judulArtikelTerbaruTabletPC{
+    width: 200px;
+    background-color: lavender;
+    padding: 5px;
+    height: auto;
+    text-align: center;
+    font-size: 12pt;
+    margin-bottom: 3%;
+  }
+  .judulArtikelTerbaruTabletPC p{
+    color: grey;
+    width: 85%;
+    margin: auto;
+    font-size: 11pt;
+  }
+ 
+  .judulArtikelTerbaruTabletPC a{text-decoration: none; color: black;}
+  .judulArtikelTerbaruTabletPC a:hover{color: slateblue; text-decoration: underline;}
+  .listCaptionArtikelTerbaruTabletPC a{color: grey; text-decoration: none; transition: all 0.3s;}
+  .listCaptionArtikelTerbaruTabletPC a:hover{text-decoration: underline; color: #ffcccc;}
+}
+@media screen and (min-width: 1280.3px) and (max-width: 1340px) {
+  .parentLuarArtikelTerbaruDanTerpopulerMobile{
+    display: none;
+  }
+  .parentLuarArtikelTerbaruTabletPC{
+    height: auto;
+    background-color:#334d4d;
+    border-radius: 25px;
+  }
+  .parentDalamArtikelTerbaruTabletPC{
+    height: 100%;
+    padding: 20px;
+  }
+  .parentDalamArtikelTerbaruTabletPC h2{
+    
+    margin-top: 10px;
+    font-family: pica;
+  }
+  .komponenArtikelTerbaruTabletPC{
+    float: left;
+    margin-right: 20px;
+  }
+  .bungkusLuarArtikelTerbaruTabletPC{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+  .bungkusLuarArtikelTerbaruTabletPC::-webkit-scrollbar{width: 5px;}.bungkusLuarArtikelTerbaruTabletPC::-webkit-scrollbar-thumb{background: #232323;  border-radius: 30px; width: 10px;}
+  .bungkusDalamArtikelTerbaruTabletPC{
+    margin-top: 10px;
+    width: 110%;
+  }
+  .bgArtikelTerbaru{
+    width: 200px;
+    background-color: #9999ff;
+    height: 150px;
+  }
+  .bgArtikelTerbaru img{
+    width: 200px;
+    height: 150px;
+    border: 3px solid #9999ff;
+  }
+  .judulArtikelTerbaruTabletPC{
+    width: 200px;
+    background-color: lavender;
+    padding: 5px;
+    height: auto;
+    text-align: center;
+    font-size: 12pt;
+    margin-bottom: 3%;
+  }
+  .judulArtikelTerbaruTabletPC p{
+    color: grey;
+    width: 85%;
+    margin: auto;
+    font-size: 11pt;
+  }
+ 
+  .judulArtikelTerbaruTabletPC a{text-decoration: none; color: black;}
+  .judulArtikelTerbaruTabletPC a:hover{color: slateblue; text-decoration: underline;}
+  .listCaptionArtikelTerbaruTabletPC a{color: grey; text-decoration: none; transition: all 0.3s;}
+  .listCaptionArtikelTerbaruTabletPC a:hover{text-decoration: underline; color: #ffcccc;}
+}
+@media screen and (min-width: 1340.3px) {
+  .parentLuarArtikelTerbaruDanTerpopulerMobile{
+    display: none;
+  }
+  .parentLuarArtikelTerbaruTabletPC{
+    height: auto;
+    background-color:#334d4d;
+    border-radius: 25px;
+  }
+  .parentDalamArtikelTerbaruTabletPC{
+    height: 100%;
+    padding: 20px;
+  }
+  .parentDalamArtikelTerbaruTabletPC h2{
+    margin-top: 10px;
+    font-family: pica;
+  }
+  .komponenArtikelTerbaruTabletPC{
+    float: left;
+    margin-right: 20px;
+  }
+  .bungkusLuarArtikelTerbaruTabletPC{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+  .bungkusLuarArtikelTerbaruTabletPC::-webkit-scrollbar{width: 5px;}.bungkusLuarArtikelTerbaruTabletPC::-webkit-scrollbar-thumb{background: #232323;  border-radius: 30px; width: 10px;}
+  .bungkusDalamArtikelTerbaruTabletPC{
+    margin-top: 10px;
+  }
+  .bgArtikelTerbaru{
+    width: 200px;
+    background-color: #9999ff;
+    height: 150px;
+  }
+  .bgArtikelTerbaru img{
+    width: 200px;
+    height: 150px;
+    border: 3px solid #9999ff;
+  }
+  .judulArtikelTerbaruTabletPC{
+    width: 200px;
+    background-color: lavender;
+    padding: 5px;
+    height: auto;
+    text-align: center;
+    font-size: 12pt;
+    margin-bottom: 3%;
+  }
+  .judulArtikelTerbaruTabletPC p{
+    color: grey;
+    width: 85%;
+    margin: auto;
+    font-size: 11pt;
+  }
+  
+  .judulArtikelTerbaruTabletPC a{text-decoration: none; color: black;}
+  .judulArtikelTerbaruTabletPC a:hover{color: slateblue; text-decoration: underline;}
+  .listCaptionArtikelTerbaruTabletPC a{color: grey; text-decoration: none; transition: all 0.3s;}
+  .listCaptionArtikelTerbaruTabletPC a:hover{text-decoration: underline; color: #ffcccc;}
+}
+
+/* Pengaturan Logo Ikuti Kami */
+.instagram a{text-decoration: none; color:#E1306C;}.instagram a:hover{color:orange;}.instagram a:active{color:#833AB4;}
+.discord a{text-decoration: none; color:#5663F7;}.discord a:hover{color:#2C2F33;}.discord a:active{color:#99AAB5;}
+.youtube a{text-decoration: none; color:#FF0000;}.youtube a:hover{color:grey;}.youtube a:active{color:#990000;}
+.mail a{color:#FBBC05;}.mail a:hover{color:#34A853;}.mail a:active{color:#EA4335;}
+/* Tutup Pengaturan Logo Ikuti Kami */
+
+/* Pengaturan logo dukung kami */
+.trakteer a{text-decoration: none;}.trakteer img:hover{background-color: white; border-radius: 10px;}
+.saweria a{text-decoration: none;}.saweria img:hover{background-color: yellow; border-radius: 10px;}
+.paypal.fa-stack {font-size: 1.3em;}.paypal a{color:#253B80;}.paypal a:hover{color:#169BD7;}.paypal a:active{color:#222D65;}
+/* Tutup pengaturan logo dukung kami */
+
+.card-body{
+  background-color: #404040;
+  color: white;
+  font-family: book antiqua;
+}
+.card{
+  margin: auto;
+  border: none;
+}
+
+
+/* Tulisan Artikel Selesai */
+.kontak{
+  color: white;
+}
+
+.form-control{
+  background-color: #4d4d4d;
+  color: white;
+}
+
+/* Tombol navigasi untuk lebih dari monitor */
+@media screen and (min-width: 3300px) and (max-width: 8000px){.tombol-navigasi{
+    background:#804000;
+    display: none;
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-decoration: none;
+    transition: ease all 0.3s;
+    position: relative;
+    right:15px;
+    bottom:10px;}}
+/* Tombol Navigasi Untuk PC dan monitor */
+@media screen and (min-width: 768px) and (max-width: 3299px){
+    .tombol-navigasi{
+        background:#804000;
+        display: block;
+        width: 50px;
+        height: 50px;
+        line-height: 45px;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        text-decoration: none;
+        transition: ease all 0.3s;
+        position: fixed;
+        right:25px;
+        bottom:10px;
+    }
+    .tombol-navigasi:hover{background: salmon}}
+/* Tombol navigasi untuk mobile */
+@media screen and (min-width: 1px) and (max-width: 767px){
+    .tombol-navigasi{
+      background:#804000;
+      display: block;
+      width: 40px;
+      height: 40px;
+      line-height: 35px;
+      text-align: center;
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      text-decoration: none;
+      transition: ease all 0.3s;
+      position: fixed;
+      right:12px;
+      bottom: 8px;
+    }
+    .tombol-navigasi:hover{background: salmon}}
+/* Tombol navigasi selesai */
+
+/* Footer */
+.footer{
+  border-top: 3px solid #667676;
+}
+/* Tutup Footer */
