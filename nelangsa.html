@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <!--Metadata penting-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <!-- Judul -->
+        <title>Kat: Nelangsa</title>
+
+        <!-- css bootstrap -->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="assets/font-awesome/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/styles/style-halaman.css">
+    </head>
+    <body>
+        <!--header judul-->
+        <div class="header container-fluid text-center">
+            <h1>Lekturloka</h1>
+        </div>
+        <!--akhir kode-->
+
+        <!--Navbar-->
+        <div class="isNavbar container-fluid">
+
+            <!-- Mobile Responsive -->
+            <div class="barisNavbarMobile row">
+                <a href="tentang-kami.html#tentang-kami" class="col-sm-4 col-xs-4">Tentang Kami</a>
+                <a href="index.html" class="col-sm-4 col-xs-4">Beranda</a>
+                <a class="col-sm-4 col-xs-4" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" role="button" aria-controls="offcanvasWithBothOptions">Navigasi</a>
+            </div>
+            <!-- Close Mobile Responsive -->
+
+            <!-- Navbar untuk offanvas -->
+            <div class="navbarOffcanvas offcanvas offcanvas-end bg-dark d-block" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" style="overflow-y: scroll; overflow-x: hidden;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-light" id="offcanvasExampleLabel">Jelajahi</h5>
+                    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <form class="d-flex mt-3" method="get" action="pemberitahuan.html#pemberitahuan">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="background-color: #4d4d4d; color: whitesmoke;" required>
+                            <button class="btn" type="submit" style="background-color: burlywood;">Search</button>
+                        </form>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+                            <li class="menuUmum nav-item text-light mt-4">
+                                <p>Umum</p>
+                            </li>
+                            <li class="menuUmum nav-item">
+                                <a class="nav-link" aria-current="page" href="#">
+                                    <span class="fa-stack">
+                                        <i class="fas fa-square fa-stack-2x"></i>
+                                        <i class="fas fa-hand-pointer fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <span class="namaMenu">Kembali ke Atas</span>
+                                </a>
+                            </li>
+                            <li class="menuUmum nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">
+                                    <span class="fa-stack">
+                                        <i class="fas fa-square fa-stack-2x"></i>
+                                        <i class="fas fa-home fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <span class="namaMenu">Beranda</span>
+                                </a>
+                            </li>
+                            <li class="menuUmum nav-item">
+                                <a class="nav-link" href="tentang-kami.html#tentang-kami">
+                                    <span class="fa-stack">
+                                        <i class="fas fa-square fa-stack-2x"></i>
+                                        <i class="fas fa-user-friends fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <span class="namaMenu">Tentang Kami</span>
+                                </a>
+                            </li>
+                            <li class="menuUmum nav-item">
+                                <a class="nav-link" href="kontak-kami.html#kontak-kami">
+                                    <span class="fa-stack">
+                                        <i class="fas fa-square fa-stack-2x"></i>
+                                        <i class="fas fa-address-card fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <span class="namaMenu">Kontak Kami</span>
+                                </a>
+                            </li>
+                            <li class="menuUmum nav-item">
+                                <a class="nav-link" href="kebijakan-privasi.html#kebijakan-privasi">
+                                    <span class="fa-stack">
+                                        <i class="fas fa-square fa-stack-2x"></i>
+                                        <i class="fas fa-user-shield fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <span class="namaMenu">Kebijakan Privasi</span>
+                                </a>
+                            </li>
+                            <li class="menuUmum nav-item">
+                                <a class="nav-link" href="penafian.html#penafian">
+                                    <span class="fa-stack">
+                                        <i class="fas fa-square fa-stack-2x"></i>
+                                        <i class="fas fa-exclamation-triangle fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <span class="namaMenu">Penafian</span>
+                                </a>
+                            </li>
+                            <li class="menuUmum nav-item">
+                                <a class="nav-link" href="index.html#dukung-kami">
+                                    <span class="fa-stack">
+                                        <i class="fas fa-square fa-stack-2x"></i>
+                                        <i class="fas fa-donate fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <span class="namaMenu">Dukung Kami</span>
+                                </a>
+                            </li>
+                            <li class="menuUmum nav-item">
+                                <a class="nav-link" href="indeks-artikel.html#indeks-artikel">
+                                    <span class="fa-stack">
+                                        <i class="fas fa-square fa-stack-2x"></i>
+                                        <i class="fas fa-layer-group fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <span class="namaMenu">Indeks Artikel</span>
+                                </a>
+                            </li>
+                            <li class="menuUmum nav-item">
+                                <a class="nav-link" href="https://tokko.io/sekenloka">
+                                    <span class="fa-stack">
+                                        <i class="fas fa-square fa-stack-2x"></i>
+                                        <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <span class="namaMenu">Toko</span>
+                                </a>
+                            </li>
+                            <li class="menuUmum nav-item mt-4 text-light">
+                                <p>Kategori</p>
+                            </li>
+                            <li class="nav-item">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item ">
+                                        <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" style="background-color: #fb6ac3; color: black;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Pilih Kategori
+                                        </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse bg-secondary" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="menuKategori accordion-body text-center">
+                                                <a class="nav-link" href="asa.html#asa">
+                                                    <span>Asa</span>
+                                                </a>
+                                                <a class="nav-link" href="embara.html#embara">
+                                                    <span>Embara</span>
+                                                </a>
+                                                <a class="nav-link" href="hikmah.html#hikmah">
+                                                    <span>Hikmah</span>
+                                                </a>
+                                                <a class="nav-link" href="nadir.html#nadir">
+                                                    <span>Nadir</span>
+                                                </a>
+                                                <a class="nav-link" href="nelangsa.html#nelangsa">
+                                                    <span>Nelangsa</span>
+                                                </a>
+                                                <a class="nav-link" href="perspektif.html#perspektif">
+                                                    <span>Perspektif</span>
+                                                </a>
+                                                <a class="nav-link" href="sajak.html#sajak">
+                                                    <span>Sajak</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menuUmum nav-item mt-4 text-light">
+                                <a name="subWebsite"><p>Sub Website Kami</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="accordion" id="accordionExample2">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color:#e6ffcc; color: black;">
+                                            Pilih Sub Web
+                                        </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse bg-secondary" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="menuSubWeb accordion-body text-center">
+                                                <a class="nav-link" href="pemberitahuan.html">
+                                                    <span>Bahasa</span>
+                                                </a>
+                                                <a class="nav-link" href="pemberitahuan.html">
+                                                    <span>Buku</span>
+                                                </a>
+                                                <a class="nav-link" href="pemberitahuan.html">
+                                                    <span>Musik</span>
+                                                </a>
+                                                <a class="nav-link" href="pemberitahuan.html">
+                                                    <span>Informatika</span>
+                                                </a>
+                                                <a class="nav-link" href="pemberitahuan.html">
+                                                    <span>Seputar Tips</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menuUmum nav-item mt-4 text-light text-end">
+                                <p>Artikel Terpopuler</p>
+                            </li>
+                            <li class="parentLuarOffcanvasArtikelTerpopuler nav-item col align-self-end">
+                                <div class="parentDalamOffcanvasArtikelTerpopuler">
+                                    <div class="kontenOffcanvasArtikelTerpopuler">
+                                        <div class="kotakKontenOffcanvasArtikelTerpopuler">
+                                            <img src="assets/img/beranda_bg/tangan-bunga.png" style="background-color: black;">
+                                            <a href="#" class="captionKotakKontenOffcanvasArtikelTerbaru">
+                                                No article yet
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="kontenOffcanvasArtikelTerpopuler">
+                                        <div class="kotakKontenOffcanvasArtikelTerpopuler">
+                                            <img src="assets/img/beranda_bg/tangan-bunga.png" style="background-color: black;">
+                                            <a href="#" class="captionKotakKontenOffcanvasArtikelTerbaru">
+                                                No article yet
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="kontenOffcanvasArtikelTerpopuler">
+                                        <div class="kotakKontenOffcanvasArtikelTerpopuler">
+                                            <img src="assets/img/beranda_bg/tangan-bunga.png" style="background-color: black;">
+                                            <a href="#" class="captionKotakKontenOffcanvasArtikelTerbaru">
+                                                No article yet
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="kontenOffcanvasArtikelTerpopuler">
+                                        <div class="kotakKontenOffcanvasArtikelTerpopuler">
+                                            <img src="assets/img/beranda_bg/tangan-bunga.png" style="background-color: black;">
+                                            <a href="#" class="captionKotakKontenOffcanvasArtikelTerbaru">
+                                                No article yet
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="judulOffcanvasArtikelTerbaru nav-item text-light text-start">
+                                <p>Artikel Terbaru</p>
+                            </li>
+                            <li class="parentLuarOffcanvasArtikelTerbaru nav-item col align-self-start">
+                                <div class="parentDalamOffcanvasArtikelTerbaru ">
+                                    <div class="kontenOffcanvasArtikelTerbaru">
+                                        <div class="kotakKontenOffcanvasArtikelTerbaru">
+                                            <img src="assets/img/post-1-keinginan-sumber-sengsara//boneka.jpg">
+                                            <a href="keinginan-sumber-sengsara.html#keinginan-sumber-sengsara" class="captionKotakKontenOffcanvasArtikelTerbaru">
+                                                Semakin Ingin Semakin Sengsara
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="kontenOffcanvasArtikelTerbaru">
+                                        <div class="kotakKontenOffcanvasArtikelTerbaru">
+                                            <img src="assets/img/post-2-rembulan-yang-tertutup-awan/lelaki-sendiri.jpg">
+                                            <a href="rembulan-tertutup-awan.html#rembulan-tertutup-awan" class="captionKotakKontenOffcanvasArtikelTerbaru">
+                                                Rembulan yang Tertutup Awan
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="kontenOffcanvasArtikelTerbaru">
+                                        <div class="kotakKontenOffcanvasArtikelTerbaru">
+                                            <img src="assets/img/beranda_bg/tangan-bunga.png" style="background-color: black;">
+                                            <a href="#" class="captionKotakKontenOffcanvasArtikelTerbaru">
+                                                No article yet
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="kontenOffcanvasArtikelTerbaru">
+                                        <div class="kotakKontenOffcanvasArtikelTerbaru">
+                                            <img src="assets/img/beranda_bg/tangan-bunga.png" style="background-color: black;">
+                                            <a href="#" class="captionKotakKontenOffcanvasArtikelTerbaru">
+                                                No article yet
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="kontenOffcanvasArtikelTerbaru">
+                                        <div class="kotakKontenOffcanvasArtikelTerbaru">
+                                            <img src="assets/img/beranda_bg/tangan-bunga.png" style="background-color: black;">
+                                            <a href="#" class="captionKotakKontenOffcanvasArtikelTerbaru">
+                                                No article yet
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <span class="text-center text-light d-inline-block" style="border-top: 3px solid slateblue; margin-top: 10%;">
+                            Lekturloka ID
+                        </span>
+                        <br>
+                        <span class="text-end text-light" style="float: right;  border-top: 3px solid #ff99ff;">
+                            &copy; All Rights Reserved 2021
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Tutup Navbar untuk offcanvas-->
+
+            <!-- Navbar untuk PC -->
+            <div class="barisNavbarPC row">
+                <a href="penafian.html#penafian" class="col-md-2 col-sm-2">Penafian</a>
+                <a href="kebijakan-privasi.html#kebijakan-privasi" class="col-md-2 col-sm-2">Kebijakan Privasi</a>
+                <a href="kontak-kami.html#kontak-kami" class="col-md-2 col-sm-2">Kontak Kami</a>
+                <a href="tentang-kami.html#tentang-kami" class="col-md-2 col-sm-2">Tentang Kami</a>
+                <a href="index.html" class="col-md-2 col-sm-2">Beranda</a>
+                <a class="col-md-2 col-sm-2" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" role="button" aria-controls="offcanvasWithBothOptions">Navigasi</a>
+            </div>
+            <!-- Tutup navbar untuk PC -->
+
+        </div>
+        <!--akhir kode untuk navbar-->
+
+        <!--Carousel-->
+        <div class="headline container-fluid">
+        <section class="container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/beranda_bg/lekturloka.png" class="d-block w-100" alt="headline_1">
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/beranda_bg/tangan-bunga.png" class="d-block w-100" alt="headline_2">
+                       
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/beranda_bg/orang-abstrak.png" class="d-block w-100" alt="headline_3">
+                        
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        </div>
+        <!--End Section of Carousel-->
+
+        <br><a name="nelangsa"></a><br>
+
+        <!--Isi konten-->
+        <div class="isiSemuaKonten container-fluid">
+            <section class="kontenPertama container">
+                <!-- Mobile friendly -->
+                <div class="isiKontenPertamaMobile row">
+                    <div class="judulArtikelMobilePhone col-xs-12">
+                        <div class="isiJudulArtikelMobile">
+                            <h1>Kategori: Nelangsa</h1>
+                        </div>
+                        <div class="pembuatTanggalKategoriTagsMobile">
+                            <h6>Lekturloka - <small style="font-family: monospace;">Banyak baca banyak wawasan</small></h6>
+                        </div>
+                    </div>
+                    <div class="kategoriMobile col-xs-12">
+                        <div class="kategoriDanArtikelFavoritMobile row-col-2">
+                            <div class="bungkusKategoriMobile col-xs-6">
+                                <h2>Kategori</h2>
+                                <div class="kategori-1Mobile mt-3">
+                                    <a href="asa.html#asa" title="Photo by Nita from Pexels">
+                                        Asa
+                                    </a>
+                                </div>
+                                <div class="kategori-2Mobile mt-3">
+                                    <a href="embara.html#embara" title="Photo by suzukii xingfu from Pexels">
+                                        Embara
+                                    </a>
+                                </div>
+                                <div class="kategori-3Mobile mt-3">
+                                    <a href="hikmah.html#hikmah" title="Gambar oleh Lewis Burt dari Pixabay">
+                                        Hikmah
+                                    </a>
+                                </div>
+                                <div class="kategori-4Mobile mt-3">
+                                    <a href="nadir.html#nadir" title="Photo by Luck Galindo from Pexels">
+                                        Nadir
+                                    </a>
+                                </div>
+                                <div class="kategori-5Mobile mt-3">
+                                    <a href="semua-kategori.html#semua-kategori">
+                                        Lainnya
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="bungkusSubWebsite col-xs-6">
+                                <h2>Sub Website</h2>
+                                <div class="subWebsite-1Mobile mt-3">
+                                    <a href="pemberitahuan.html" title="Photo by Pexels">
+                                        Buku
+                                    </a>
+                                </div>
+                                <div class="subWebsite-2Mobile mt-3">
+                                    <a href="pemberitahuan.html" title="Photo by Pexels">
+                                        Informatika
+                                    </a>
+                                </div>
+                                <div class="subWebsite-3Mobile mt-3">
+                                    <a href="pemberitahuan.html" title="Photo by Pexels">
+                                        Tutorial
+                                    </a>
+                                </div>
+                                <div class="subWebsite-4Mobile mt-3">
+                                    <a  data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" role="button" aria-controls="offcanvasWithBothOptions">
+                                        Lainnya
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Close mobile friendly -->
+
+                <!-- For PC and monitor-->
+                <div class="isiKontenPertama row-col-2 d-none d-md-block d-sm-block">
+                    <div class="judulArtikel col-md-8 d-none d-md-block d-sm-block">
+                        <div class="isiJudulArtikel">
+                            <h1>Kategori: Nelangsa</h1>
+                        </div>
+                        <div class="pembuatTanggalKategoriTags" style="overflow-x:auto; overflow-y: hidden;">
+                            <h6>Lekturloka - <small style="font-family: monospace;">Banyak baca banyak wawasan</small></h6>
+                        </div>
+                    </div>
+                    <div class="kategori col-md-4 d-none d-md-block d-sm-block">
+                        <div class="isiKategori container">
+                            <div class="pilihKategori row">
+                                <div class="judulKategori col-md-12 d-none d-sm-block d-md-none mt-4">
+                                    Pilih Kategori
+                                </div>
+                                <div class="boxKategori1 col-md-4 col-sm-12 mt-4" style="background-color: #bf4080;">
+                                    <a href="asa.html#asa" class="d-none d-md-block d-sm-block">
+                                        <div class="boxDalamKategori text-center mt-3">
+                                            <h6>Asa</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="boxKategori2 col-md-4 col-sm-12 mt-4" style=" background-color:  #cc5200;">
+                                    <a href="embara.html#embara" class="d-none d-md-block d-sm-block">
+                                        <div class="boxDalamKategori text-center mt-3">
+                                            <h6>Embara</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="boxKategori3 col-md-4 col-sm-12 mt-4" style="background-color:#008060;">
+                                    <a href="hikmah.html#hikmah" class="d-none d-md-block d-sm-block">
+                                        <div class="boxDalamKategori text-center mt-3">
+                                            <h6>Hikmah</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="judulKategori col-md-12 d-none d-md-block mt-3">
+                                    Pilih Kategori
+                                </div>
+                                <div class="boxKategori4 col-md-4 mt-3" style="background-color: #ff99ff;">
+                                    <a href="nadir.html#nadir" class="d-none d-md-block d-sm-block">
+                                        <div class="boxDalamKategori text-center mt-3">
+                                            <h6>Nadir</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="boxKategori5 col-md-4 mt-3" style="background-color: #9999ff;">
+                                    <a href="nelangsa.html#nelangsa" class="d-none d-md-block d-sm-block">
+                                        <div class="boxDalamKategori text-center mt-3">
+                                            <h6 >Nelangsa</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="boxKategori6 col-md-4 mt-3" style="background-color: #404040;">
+                                    <a href="semua-kategori.html" class="d-none d-md-block d-sm-block">
+                                        <div class="boxDalamKategori6 text-center mt-3">
+                                            <h6>Lihat Semua</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div><hr class="mt-4" size="5" style="color: white;">
+                            <div class="captionPilihWebLainDesktop d-none d-md-none d-sm-block col-sm-12 mb-2" style="width: 180px;">
+                                Kunjungi Website Lain!
+                            </div>
+                            <div class="barisPilihWeb row">
+                                <div class="pilihWeb d-none d-md-block d-sm-block col-md-7 col-sm-12">
+                                    <div class="pilihWebBungkusLuar mt-3 carousel">
+                                        <div class="pilihWebBungkusDalam">
+                                            <div class="lingkarPilihWeb">
+                                                <a href="pemberitahuan.html">
+                                                    Bahasa
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="pilihWebBungkusDalam">
+                                            <div class="lingkarPilihWeb">
+                                                <a href="pemberitahuan.html">
+                                                    Buku
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="pilihWebBungkusDalam">
+                                            <div class="lingkarPilihWeb">
+                                                <a href="pemberitahuan.html">
+                                                   Musik
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="pilihWebBungkusDalam">
+                                            <div class="lingkarPilihWeb">
+                                                <div class="lingkarPilihWeb">
+                                                    <a href="pemberitahuan.html">
+                                                        Informatika
+                                                    </a>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="pilihWebBungkusDalam">
+                                            <div class="lingkarPilihWeb">
+                                                <div class="lingkarPilihWeb">
+                                                    <a href="pemberitahuan.html">
+                                                        Seputar Tips
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="captionPilihWebLainDesktop d-none d-md-block d-sm-none col-md-5 mt-4">
+                                    Kunjungi Website Lainnya!
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--Artikel Terpopuler-->
+                    <div class="artikelTerpopuler d-none d-md-block d-sm-block col-md-8">
+                        <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; width: 100%; ">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item" aria-current="page">Artikel Terpopuler</li>
+                                <li class="breadcrumb-item">
+                                    <a href="indeks-artikel.html#indeks-artikel" >Indeks</a>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="judulArtikelTerpopuler d-none d-md-block col-md-8 d-sm-block">
+                        <div class="bungkusLuar d-none d-md-block d-sm-block">
+                            <div class="bungkusDalam">
+                                <div class="boxLuar">
+                                </div>
+                                <div class="boxDalam">
+                                    <img src="assets/img/post-1-keinginan-sumber-sengsara/boneka.jpg">
+                                </div>
+                                <div class="boxIsiArtikelTerpopuler">
+                                    <p>
+                                        <a class="line1ArtikelTerpopulerTabletPC" href="keinginan-sumber-sengsara.html#keinginan-sumber-sengsara">
+                                            Semakin Ingin Semakin Sengsara
+                                            <br>-----<br>
+                                        </a>
+                                        <a class="line2ArtikelTerpopulerTabletPC" href="hikmah.html#hikmah" style="color: grey;">Hikmah</a> 
+                                        // Oleh Muhafi
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bungkusDalam">
+                                <div class="boxLuar"></div>
+                                <div class="boxDalam">
+                                    <img src="assets/img/post-2-rembulan-yang-tertutup-awan/lelaki-sendiri.jpg" alt="">
+                                </div>
+                                <div class="boxIsiArtikelTerpopuler">
+                                    <p>
+                                        <a class="line1ArtikelTerpopulerTabletPC" href="keinginan-sumber-sengsara.html#keinginan-sumber-sengsara">
+                                            Rembulan yang Tertutup Awan
+                                            <br>-----<br>
+                                        </a>
+                                        <a class="line2ArtikelTerpopulerTabletPC" href="sajak.html#sajak" style="color: grey;">Sajak</a> 
+                                        // Oleh Muhafi
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bungkusDalam">
+                                <div class="boxLuar"></div>
+                                <div class="boxDalam">
+                                </div>
+                                <div class="boxIsiArtikelTerpopuler">
+                                   
+                                </div>
+                            </div>
+                            <div class="bungkusDalam">
+                                <div class="boxLuar"></div>
+                                <div class="boxDalam"></div>
+                                <div class="boxIsiArtikelTerpopuler"></div>
+                            </div>
+                            <div class="bungkusDalam">
+                                <div class="boxLuar"></div>
+                                <div class="boxDalam"></div>
+                                <div class="boxIsiArtikelTerpopuler"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <br>
+            </section><br><hr size="2" style="border: solid white;">
+            <br>
+
+            <!-- Gambar artikel-->
+            <section class="kontenKedua container">
+                <div class="row">
+                    <div class="imgArtikel d-md-block">
+                        <div class="imgArtikelPerBaris row">
+                            <div class="column">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/malam-balon.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/pohon-cinta.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/lorong.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/stormy-night.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/rintik-hujan.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/stormy-night.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/pohon-introver.jpg">
+                            </div>
+                            <div class="column">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/pohon-introver.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/stormy-night.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/kakek-tua.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/bulan-pantai.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/pohon-cinta.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/bulan-pantai.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/malam-balon.jpg">
+
+                            </div>
+                            <div class="column">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/malam-balon.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/pohon-cinta.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/lorong.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/stormy-night.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/rintik-hujan.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/stormy-night.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/pohon-introver.jpg">
+                            </div>
+                            <div class="column">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/pohon-introver.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/stormy-night.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/kakek-tua.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/bulan-pantai.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/pohon-cinta.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/bulan-pantai.jpg">
+                                <img src="assets/img/kategori_bg/bg-kategori-nelangsa/malam-balon.jpg">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <br>
+            <hr size="2" style="border: solid white;">
+            <br>
+            <!-- Ending Gambar Artikel -->
+
+            <!-- Tulisan Artikel dan Artikel Terbaru -->
+            <section class="parentLuarTulisanArtikelKonstelasiArtikel container">
+                <div class="parentDalamTulisanArtikel row-col-2 d-block">  
+                    <div class="tulisanArtikelKonstelasiArtikel col-md-7">
+                        <div class="isiTulisanArtikel">
+                            <div class="card mb-3" style="max-width: 840px;">
+                                <div class="row g-0">
+                                  <div class="col-md-3 col-sm-3">
+                                    <img src="..." class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+                                  <div class="col-md-9 col-sm-9 h-100">
+                                    <div class="card-body">
+                                      <h5 class="card-title">There is no article yet</h5>
+                                      <p class="card-text"></p>
+                                      <p class="card-text"><small class="text-muted">We are so sorry</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <br>
+                            <span style="border-top:solid 3px slateblue; width: 20%; color: snow;">Lekturloka ID</span>
+  
+
+                            <div class="teksIkutiKami text-end">
+                                <h5>Ikuti Kami</h5>
+                            </div>
+                            <div class="isiIkutiKami text-end">
+                                <span class="instagram fa-stack">
+                                    <a href="https://www.instagram.com/lekturloka">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                    </a>
+                                </span>
+                                <span class="discord fa-stack">
+                                    <a href="https://discord.gg/rCxQ26mF2Q">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+                                    </a>
+                                </span>
+                                <span class="youtube fa-stack">
+                                    <a href="https://youtube.com/channel/UCs5agSG-GVFoJvlCGXRuk1Q">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-youtube fa-inverse fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="mail fa-stack">
+                                    <a href="mailto:lekturloka@gmail.com?subject=Mail From The Website&body=Dear Lekturloka,">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="far fa-envelope fa-inverse fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+            <!-- Tutup Tulisan Artikel dan Artikel Terbaru -->
+        </div>
+
+        <nav class="footer navbar navbar-expand-lg navbar-light" style="background: linear-gradient(to right, #1f1f2e 0%, #3d3d5c 100%);">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <span class=" text-light h4 mb-0">Lekturloka</span>
+                </a>
+                <span class="text-end text-light d-inline-block align-text-top  ">
+                    &copy; All Rights Reserved 2021
+                </span>
+            </div>
+        </nav>
+
+        <!-- Tombol navigasi -->
+        <a class="tombol-navigasi" title="Navigasi"  data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" role="button" aria-controls="offcanvasWithBothOptions">+</a>
+        <!-- Tutup tombol navigasi -->
+
+
+        <!--akhirnya selesai juga Tuhann!!<=-->
+
+        <!--javascript by Bootstrap and jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
