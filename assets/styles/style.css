@@ -1,43 +1,43 @@
 /* Fonts */
 @font-face{
 	font-family: 'winds';
-	src: url(assets/font/winds/TradeWinds-Regular.ttf);
+	src: url(font/winds/TradeWinds-Regular.ttf);
 }
 @font-face{
 	font-family: 'lovers';
-	src: url(assets/font/lovers/LoversQuarrel-Regular.ttf);
+	src: url(font/lovers/LoversQuarrel-Regular.ttf);
 }
 @font-face{
 	font-family: 'oregano';
-	src: url(assets/font/oregano/Oregano-Regular.ttf);
+	src: url(font/oregano/Oregano-Regular.ttf);
 }
 @font-face{
 	font-family: 'pica';
-	src: url(assets/font/pica/IMFellDWPica-Regular.ttf);
+	src: url(font/pica/IMFellDWPica-Regular.ttf);
 }
 @font-face{
 	font-family: 'tangerine';
-	src: url(assets/font/tagerine/Tangerine-Regular.ttf);
+	src: url(font/tagerine/Tangerine-Regular.ttf);
 }
 @font-face{
 	font-family: 'tilana';
-	src: url(assets/font/tilana/Tillana-Regular.ttf);
+	src: url(font/tilana/Tillana-Regular.ttf);
 }
 @font-face{
 	font-family: 'akronim';
-	src: url(assets/font/akronim/Akronim-Regular.ttf);
+	src: url(font/akronim/Akronim-Regular.ttf);
 }
 @font-face{
   font-family: 'elsie';
-  src: url(assets/font/elsie/elsie.ttf)
+  src: url(font/elsie/elsie.ttf)
 }
 @font-face {
   font-family: 'kenia';
-  src: url(assets/font/Kenia/kenia.ttf);
+  src: url(font/Kenia/kenia.ttf);
 }
 @font-face {
   font-family: 'monofett';
-  src: url(assets/font/monofett/monofett.ttf);
+  src: url(font/monofett/monofett.ttf);
 }
 /* End */
 
