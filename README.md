@@ -10,6 +10,7 @@ I use HTML and responsive CSS. There are three displays that I've developed:
 - Mobile
 - Tablet
 - Desktop
+  
 Moreover, I use Bootstrap framework and Fontawesome tools to support the icons.
 
 ### 1.3. My Plan about Web Design 
