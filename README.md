@@ -4,7 +4,7 @@ On November 2021, I created a final project of blog web design named _Lekturloka
 ---
 ## 1. Description
 ### 1.1. What Is Lekturloka?
-*Lekturloka* is a blogging website that I designed as a passing requirement at Palcomtech OPI Mall Computer Course Institute. **Lektur** means *collection of writings* and **Loka** means *realm* or *world* in Indonesia. I really like writing, therefore I designed the web and planned to make it as my blog website theme. It'll contain my own writings.
+*Lekturloka* is a blogging website that I designed as a passing requirement at Palcomtech OPI Mall Computer Course Institute. In Indonesia, **Lektur** means *collection of writings* and **Loka** means *realm* or *world*. I really like writing, therefore I designed the web and planned to make it as my blog website theme. It'll contain my own writings.
 
 ### 1.2. File Types & Tools
 I use HTML and responsive CSS. There are three displays that I've developed:
