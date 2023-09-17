@@ -17,7 +17,7 @@ I do hope I can use the design as my blog theme in my own website. I also plan t
 
 ### 1.4. Future Features
 I will create a database and make a dynamic website.
-
+---
 
 ## 2. How To Run My Project
 This is the simple project because it only contains HTML and CSS files.
