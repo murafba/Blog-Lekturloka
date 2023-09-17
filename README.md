@@ -2,20 +2,20 @@
 On November 2021, I created a final project of blog web design named _Lekturloka_. It's developed as a passing requirement for students at Palcomtech OPI Mall Computer Course Institute to obtain a computer diploma degree. My project was chosen as the best project among the other students and I got the scholarship from the course institute.
 
 ## 1. Description
-### What Is Lekturloka?
+### 1.1. What Is Lekturloka?
 *Lekturloka* is a blogging website that I designed as a passing requirement at Palcomtech OPI Mall Computer Course Institute. **Lektur** means *collection of writings* and **Loka** means *realm* or *world* in Indonesia. I really like writing, therefore I designed the web and planned to make it as my blog website theme. It'll contain my own writings.
 
-### File Types & Tools
+### 1.2. File Types & Tools
 I use HTML and responsive CSS. There are three displays that I've developed:
 - Mobile
 - Tablet
 - Desktop
 Moreover, I use Bootstrap framework and Fontawesome tools to support the icons.
 
-### My Plan about Web Design 
+### 1.3. My Plan about Web Design 
 I do hope I can use the design as my blog theme in my own website. I also plan to create a real blog and collaborate with other authors that have same hobby like mine. Then, in the future my website can be monetized and we become a real community.
 
-### Future Features
+### 1.4. Future Features
 I will create a database and make a dynamic website.
 
 ## 2. How To Run My Project
