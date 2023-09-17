@@ -17,15 +17,15 @@ I do hope I can use the design as my blog theme in my own website. I also plan t
 
 ### 1.4. Future Features
 I will create a database and make a dynamic website.
----
 
+---
 ## 2. How To Run My Project
 This is the simple project because it only contains HTML and CSS files.
 - Open up Git Bash
 - Type in folder destination for the repo
 - Type `git clone https://github.com/murafba/Final-Project-Web-Design-Blog-Lekturloka.git`
 
-
+---
 ## 3. License
 MIT License
 
@@ -49,6 +49,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-
+---
 ## 4. How To Use Project
 Feel free to use my design as reference.
