@@ -1,7 +1,6 @@
 # Final-Project-Web-Design-Blog-Lekturloka
 On November 2021, I created a final project of blog web design named _Lekturloka_. It's developed as a passing requirement for students at Palcomtech OPI Mall Computer Course Institute to obtain a computer diploma degree. My project was chosen as the best project among the other students and I got the scholarship from the course institute.
 
--
 
 ## 1. Description
 ### 1.1. What Is Lekturloka?
@@ -30,6 +29,7 @@ This is the simple project because it only contains HTML and CSS files.
 
 ---
 ## 3. License
+Copyright c
 MIT License
 
 Copyright (c) 2023 Muhammad Rafi Akbar
