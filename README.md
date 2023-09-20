@@ -1,7 +1,8 @@
 # Final-Project-Web-Design-Blog-Lekturloka
 On November 2021, I created a final project of blog web design named _Lekturloka_. It's developed as a passing requirement for students at Palcomtech OPI Mall Computer Course Institute to obtain a computer diploma degree. My project was chosen as the best project among the other students and I got the scholarship from the course institute.
 
----
+-
+
 ## 1. Description
 ### 1.1. What Is Lekturloka?
 *Lekturloka* is a blogging website that I designed as a passing requirement at Palcomtech OPI Mall Computer Course Institute. In Indonesia, **Lektur** means *collection of writings* and **Loka** means *realm* or *world*. I really like writing, therefore I designed the web and planned to make it as my blog website theme. It'll contain my own writings.
