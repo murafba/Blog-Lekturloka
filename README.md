@@ -54,6 +54,6 @@ Pull requests aren't available. However, if you have questions or recommendation
 <br>
 
 ## 6. Support Me
-If you found this project is useful and want to thank me by giving some bucks, you can support me in the link below. Thank you for your support.
+If you found this project is useful and want to thank me by giving some bucks, you can support me in the link below. You can also thank me by giving star for the project! Thank you for your support.
 - PayPal: [@murafba](https://paypal.me/murafba)
 - Saweria (For Indonesian citizens): [@murafba](https://saweria.co/murafba)
