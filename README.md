@@ -30,7 +30,7 @@ This is the simple project as it only contains HTML and CSS files.
 
 
 ## 3. License
-Copyright (c) 2023 [Muhammad Rafi Akbar](https://github.com/murafba).
+Copyright (c) 2023 [Muhammad Rafi Akbar](https://github.com/murafba)<br>
 This project is [MIT](https://github.com/murafba/Final-Project-Web-Design-Blog-Lekturloka/blob/main/LICENSE) licensed
 
 
