@@ -34,7 +34,7 @@ This is the simple project as it only contains HTML and CSS files.
 ## 3. License
 Copyright &copy; 2023 by [Muhammad Rafi Akbar](https://github.com/murafba)<br>
 This project is [MIT](https://github.com/murafba/Final-Project-Web-Design-Blog-Lekturloka/blob/main/LICENSE) licensed<br>
-You can use this project for non-commercial, academic, and experiment use
+You can use this project for non-commercial, academic, and experiment use<br>
 Feel free to use my web design as reference
 
 <br>
