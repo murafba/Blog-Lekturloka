@@ -12,7 +12,7 @@ I use HTML and responsive CSS. There are three displays that I've developed:
 - Mobile
 - Tablet
 - Desktop
-Moreover, I use Bootstrap framework and Fontawesome tools to support the icons.
+  Moreover, I use Bootstrap framework and Fontawesome tools to support the icons.
 
 ### 1.3. My Plan about Web Design 
 I do hope I can use the design as my blog theme in my own website. I also plan to create a real blog and collaborate with other authors that have same hobby like mine. Then, in the future my website can be monetized and we become a real community.
