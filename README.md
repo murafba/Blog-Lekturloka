@@ -44,7 +44,7 @@ Feel free to use my web design as reference
 Muhammad Rafi Akbar
 - Linkedin: [Muhammad Rafi Akbar](https://linkedin.com/in/murafba)
 - GitHub: [@murafba](https://github.com/murafba)
-- Instagram: [@murafba](https://instagram.com/murafba)
+
 
 <br>
 
