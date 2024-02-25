@@ -1,4 +1,5 @@
-# Final-Project-Web-Design-Blog-Lekturloka
+# Lekturloka
+## Blog Web Design
 On November 2021, I created a final project of blog web design named _Lekturloka_. It's developed as a passing requirement for students at Palcomtech OPI Mall Computer Course Institute to obtain a computer diploma degree. My project was chosen as the best project among the other students and I got the scholarship from the course institute.
 
 <br>
